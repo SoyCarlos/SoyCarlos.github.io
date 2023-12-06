@@ -1,0 +1,15 @@
+Hello! I'm Carlos (aka SoyCarlos). By day, I am actively working on <ins>[Civvy](https://civvy.ai)</ins>, a project that holds great significance to me. This venture reflects my commitment to creating solutions that matter and contribute positively to society.  
+<br />
+Prior to this, I spent some time at <ins>[Amazon on their Supply Chain](https://sell.amazon.com/programs/supply-chain)</ins> team as a Software Engineer. Before that, I spent over a year at <ins>[Entidad](https://www.entidad.io/)</ins> as their sole Data Engineer, where I built out their data reporting infrastructure to support clients like the <ins>[United Farmworkers Foundation](https://www.ufwfoundation.org/)</ins>.  
+<br />
+Additionally, I'm involved in <ins>[Open Patterson](https://openpatterson.org/)</ins>, a civic tech initiative that I founded with Rebekah Miranda. As the Team Lead & Software Engineer, I guide a passionate group of volunteers dedicated to making a positive impact in our community. Together, we've developed a web app empowering residents to engage with city council proceedings named <ins>[BPCS, aka Better Patterson Council Site](https://council.openpatterson.org)</ins>, and continue to explore innovative solutions. Along with this, I serve on the Board of Directors of <ins>[Love Stanislaus County.](https://www.lovestanislauscounty.org/)</ins>  
+<br />
+I'm proud to call <ins>[Patterson, CA](https://en.wikipedia.org/wiki/Patterson%2C_California)</ins>, my hometown—a charming, rural-ish town with a penchant for Apricots and Roundabouts. It's where I laid the foundation for my journey, graduating from Patterson High School in 2016.  
+<br />
+My academic pursuits led me to UC Berkeley, where I graduated with a Bachelors in Cognitive Science in 2021. Originally intending to dive into Computer Science, my passion pivoted towards Data after an inspiring Foundations of Data Science course. My time at Berkeley was marked by deep involvement in the Data Science and media communities, particularly through my role at CalTV.  
+<br />
+In recent years, I've delved into diverse realms, from Data Education and Politics to Government, Health, and Social Impact. Notable experiences include three Political Campaigns with <ins>[Bluebonnet Data](https://www.bluebonnetdata.org/)</ins>, a Civic Digital Data Science Fellowship at the <ins>[U.S. Census Bureau](https://blog.codingitforward.com/meet-the-2019-fellows-u-s-census-bureau-52b87c481bb1)</ins> (<ins>[Project](https://github.com/codingitforward/cdfdemoday2019/blob/master/Automating_Frame_Maintenance_and_Frame_Matching.pdf)</ins>), and engaging in NLP x Gastrointestinal Research through UCSF and <ins>[UC Berkeley Data Discovery](https://data.berkeley.edu/discovery)</ins>.  
+<br />
+Eager to connect? The best way is through <ins>[email](mailto:me@carlos.soy)</ins>. Let's explore possibilities, collaborate, and create something extraordinary together!  
+<br />
+Btw, this isn't how I normally type, I just decided to have ChatGPT write it up for me.
