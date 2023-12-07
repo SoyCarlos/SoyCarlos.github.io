@@ -1,0 +1,40 @@
+---
+layout: post
+title: "Year 1 As A Data Engineer: What I Learned"
+subtitle: "What I didn't expect and what I grew to appreciate after working as a Data Engineer"
+date: 2022-08-20 07:00:00AM
+date-written: "Aug 20, 2022"
+blurb: "In my mind, there was some open source software that all companies used to pipe data from one area to another. I thought absolutely everything was done in Airflow and Spark. I'll tell you now, besides a very short stint with Airflow, I do not use either of these tools today. Turns out the Data Engineering space is vibrant and has an insane amount of offerings for tools."
+hero_image: "assets/img/blog/data-engineer-learnings/hero.jpg"
+hero_image_owner: "Nana Smirnova"
+hero_image_owner_url: "https://unsplash.com/@nananadolgo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+hero_image_location: "Unsplash"
+hero_image_location_url: "https://unsplash.com/s/photos/data-warehouse?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+reading_duration: "4"
+data_lyket_id: "data-engineer-learnings"
+---
+Allow me to provide a bit of background. Before my current role and before graduating from Cal in May '21, I was planning to find a Data Science role. I was hoping it would be relatively simple given that I had several Data Science roles & internships under my belt. Unfortunately, not only was the market not too favorable to folks looking for entry-level Data Science roles with only a Bachelor's, but more importantly, I did not begin my job search until a few weeks before graduating. I did not even ramp up my job search until after graduating, so by that time, the vast majority of companies who would hire New Grad Data Scientists had already found their candidates. Around that time, I became curious about Data Engineering and took a couple of courses on DataCamp. Coincidentally, and lucky for me, my current company, [Entidad](https://www.entidad.io/), found my profile on [Diversify Tech](https://www.diversifytech.co/) and were in search of a Data Engineer. So, I dove right in.
+
+# What I Did Not Expect
+In my mind, there was some open source software that all companies used to pipe data from one area to another. I thought absolutely everything was done in Airflow and Spark. I'll tell you now, besides a very short stint with Airflow, I do not use either of these tools today. Turns out the Data Engineering space is vibrant and has an insane amount of offerings for tools. It can be as complex as a made-from-scratch pipeline written in Python running on EC2 to as simple as a Fivetran pipeline setup in less than 5 minutes. The wide array of offerings means that there is almost always a tool that is perfect for a pipeline, no matter the size, origin, or destination. And when there is not a perfect lego piece for your pipeline, most tools allow for custom connectors to be built for your edge case.
+
+I also did not expect the popularity of SQL in the space. Before this role, I had used SQL only to query data. As far as I was concerned that is all it was for, getting the data I needed. Of course, I was aware you can do deeper analysis using SQL, but I always preferred querying using SQL and then doing everything else in Pandas/Python. However, with the rise of tools like [dbt](https://www.getdbt.com/), SQL has continued to become even more powerful. Instead of SQL being a tool in its last years like I foolishly thought, it is going to continue growing for decades.
+
+Another tool that I use, although not as critical is cron. Although I do not have the structure memorized, I depend on [crontab guru](https://crontab.guru/), I find the simplicity of the asterisks, question marks, and hours of day very visually appealing. Sure it is useful for scheduling, but I like it more for the aesthetics than the functionality.
+
+# What I Grew to Appreciate
+"Data as a Product" is a phrase I had read a lot when learning about Data Engineering, but not something I truly understood. I understood how an app could be a product, but I could not wrap my head around how data could be a product. At least I thought I didn't. What I did not realize was that I had already been exposed to one of my most common data products: APIs. APIs are everywhere, they are critical and used in pretty much every product, though some APIs may only be used internally at companies. 
+
+My next hurdle, was understanding "Owning datasets". Sure, if every dataset was just the backend to an API, then maybe it would have immediately made sense to me, but not all of them are. I did not understand what was so special about tables. The reason? I took clean datasets for granted. What I thought was unclean data, data you might find on Kaggle or even scraped from websites, was just one level of unclean data. I have learned that data can come in so many shapes, formats, and levels of granularity.  Having now gained some ownership over a part of the data infrastructure, I now understand that becoming the owner of a dataset or table means getting the correct data in such a format that makes it favorable for analysis, documenting any quirks with the data, and answering any questions stakeholders may have about it.
+
+In my case, where I occasionally get to act as a Data Engineer & Data Analyst, that sometimes means I have to ask myself these questions, but I can luckily also bug the rest of the engineering team.
+
+Another tool I grew to appreciate was tools like Fivetran. At first, I was not a fan of the tool, and I will be honest, it was because of my ego. I thought that using Fivetran, or any similar tool, made me a lesser engineer. But, what I have come to realize, is that these types of tools allow me to speed up my work and get to the parts I enjoy more, like conducting analysis or cleaning up the data. In this case, I do care more about the destination than the journey. Plus, at the end of the day, using tools like Fivetran allows engineers to provide more business value in the same amount of time than they otherwise would be able to.
+
+# The Love of My Life - The Cloud
+The most important part of my work essentially encompasses all of it, the cloud. My cloud provider of choice is AWS. Whenever there was any sort of new task that seemed to require different architecture, my immediate move was to look for any AWS services that may make the solution simpler to reach. As a result, I was exposed to all sorts of AWS offerings like Lambda, SQS, SNS, Step Functions, Eventbridge, EC2, etc etc as the list goes on. AWS and all other cloud providers will have more offerings than I would ever need, which for me has meant there is always a tool to make my work simpler or faster.
+	
+While on the topic, I fell in love with [micro ETL pipelines](https://aws.amazon.com/blogs/devops/micro-etl-pipeline-how-to-fetch-process-and-refresh-small-data-using-aws-lambda-and-aws-sam/). Whenever folks think of data, and their associated pipelines, they always think in the terabytes or even petabytes. However, most companies aren't Fortune 500 companies. I can guarantee you 99% of companies in my town don't hold even 100Gb of data total. Just like it would not make sense to build a 20-lane freeway for 2 cars, it does not make sense to build a big-tech level pipeline for a small business. Micro ETL pipelines are easy to build and easier to maintain, and I don't believe they are being leveraged well. If my town is any indication, the data revolution has yet to reach small businesses, but I think we can get there one micro ETL pipeline at a time.
+
+# Anywho
+I am grateful for what I have learned so far. I am even more grateful for all Data Engineers, having taken them for granted during my time in Data Science roles. May your data stay clean, and your pipelines not send alerts on weekends. Thanks for reading.
