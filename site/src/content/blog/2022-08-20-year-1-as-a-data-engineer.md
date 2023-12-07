@@ -5,7 +5,7 @@ subtitle: "What I didn't expect and what I grew to appreciate after working as a
 reading_duration: 4
 publishDate: 08/20/2022
 blurb: "In my mind, there was some open source software that all companies used to pipe data from one area to another. I thought absolutely everything was done in Airflow and Spark. I'll tell you now, besides a very short stint with Airflow, I do not use either of these tools today. Turns out the Data Engineering space is vibrant and has an insane amount of offerings for tools."
-hero_image: "assets/img/blog/data-engineer-learnings/hero.jpg"
+hero_image: "/blog/data-engineer-learnings/hero.jpg"
 hero_image_owner: "Nana Smirnova"
 hero_image_owner_url: "https://unsplash.com/@nananadolgo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
 hero_image_location: "Unsplash"

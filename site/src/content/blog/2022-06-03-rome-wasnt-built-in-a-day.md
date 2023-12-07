@@ -5,7 +5,7 @@ subtitle: "My Thought Process Going into Rebuilding My Site From Scratch"
 reading_duration: 9
 publishDate: 06/03/2022
 blurb: "When I first built out my personal website during my undergrad in January 2018, I took the course most students in tech take and used a free template from HTML5 UP. Specifically, I used the Dimension template and it was great. It served its purpose for an undergrad student with limited experience with HTML/CSS that was looking for internships."
-hero_image: "assets/img/blog/rome-new-website/hero.jpg"
+hero_image: "/blog/rome-new-website/hero.jpg"
 hero_image_owner: "David Köhler"
 hero_image_owner_url: "https://unsplash.com/es/@davidkhlr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
 hero_image_location: "Unsplash"
@@ -17,7 +17,7 @@ When I first built out my personal website during my undergrad in January 2018, 
 
 <br>
 
-<div class="justify-center flex"><img src="/assets/img/blog/rome-new-website/website-gen1.png" alt="Image of Website" class=""></div>
+<div class="justify-center flex"><img src="/./blog/rome-new-website/website-gen1.png" alt="Image of Website" class=""></div>
 
 
 <br>
@@ -26,11 +26,11 @@ By September of that year, I had allowed my original domain, CarlosEOrtega.com, 
 
 <br>
 
-<div class="justify-center flex"><img src="/assets/img/blog/rome-new-website/website-gen2.png" alt="Image of Website" class=""></div>
+<div class="justify-center flex"><img src="/./blog/rome-new-website/website-gen2.png" alt="Image of Website" class=""></div>
 
 <br>
 
-<div class="justify-center flex"><img src="/assets/img/blog/rome-new-website/website-gen2-2.png" alt="Image of Website" class=""></div>
+<div class="justify-center flex"><img src="/./blog/rome-new-website/website-gen2-2.png" alt="Image of Website" class=""></div>
 
 <br>
 
@@ -42,7 +42,7 @@ This website was short-lived. I continued learning a bit more HTML + CSS, and by
 
 <br>
 
-<div class="justify-center flex"><img src="/assets/img/blog/rome-new-website/website-gen3.gif" alt="Image of Website" class="w-full object-cover md:w-4/5"></div>
+<div class="justify-center flex"><img src="/./blog/rome-new-website/website-gen3.gif" alt="Image of Website" class="w-full object-cover md:w-4/5"></div>
 
 <br>
 
@@ -54,7 +54,7 @@ That design served me well, and I used it for over a year. Whenever I started/en
 
 <br>
 
-<div class="justify-center flex"><img src="/assets/img/blog/rome-new-website/website-gen4.gif" alt="Image of Website" class="w-full object-cover md:w-4/5"></div>
+<div class="justify-center flex"><img src="/./blog/rome-new-website/website-gen4.gif" alt="Image of Website" class="w-full object-cover md:w-4/5"></div>
 
 <br>
 
@@ -62,7 +62,7 @@ The website was beautiful, but extremely large. As you can see, whenever you scr
 
 <br>
 
-<div class="justify-center flex"><img src="/assets/img/blog/rome-new-website/gatsby-blog.png" alt="Image of Website" class=""></div>
+<div class="justify-center flex"><img src="/./blog/rome-new-website/gatsby-blog.png" alt="Image of Website" class=""></div>
 
 <br>
 
@@ -72,7 +72,7 @@ I knew that this time around I would need to build it from scratch again to get 
 
 <br>
 
-<div class="justify-center flex"><img src="/assets/img/blog/rome-new-website/chip-huyen.png" alt="Image of Website" class=""></div>
+<div class="justify-center flex"><img src="/./blog/rome-new-website/chip-huyen.png" alt="Image of Website" class=""></div>
 
 <br>
 
@@ -80,7 +80,7 @@ I knew that this time around I would need to build it from scratch again to get 
 
 <br>
 
-<div class="justify-center flex"><img src="/assets/img/blog/rome-new-website/tiny-projects.png" alt="Image of Website" class=""></div>
+<div class="justify-center flex"><img src="/./blog/rome-new-website/tiny-projects.png" alt="Image of Website" class=""></div>
 
 <br>
 
@@ -88,7 +88,7 @@ Ben Stoke's <a href="https://tinyprojects.dev/" target="_blank" class="underline
 
 <br>
 
-<div class="justify-center flex"><img src="/assets/img/blog/rome-new-website/bay-template.png" alt="Image of Website" class=""></div>
+<div class="justify-center flex"><img src="/./blog/rome-new-website/bay-template.png" alt="Image of Website" class=""></div>
 
 <br>
 
@@ -96,7 +96,7 @@ I found Elliot Vincent's <a href="https://github.com/eliottvincent/bay" target="
 
 <br>
 
-<div class="justify-center flex"><img src="/assets/img/blog/rome-new-website/resume-jekyll-template.png" alt="Image of Website" class=""></div>
+<div class="justify-center flex"><img src="/./blog/rome-new-website/resume-jekyll-template.png" alt="Image of Website" class=""></div>
 
 <br>
 

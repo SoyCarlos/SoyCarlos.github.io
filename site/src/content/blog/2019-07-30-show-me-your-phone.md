@@ -5,7 +5,7 @@ subtitle: ""
 reading_duration: 4
 publishDate: 07/30/2019
 blurb: "Recently, at work, I have been working with some Natural Language Processing techniques. Which, got me thinking. Is there any way I can use any of these techniques on my conversations."
-hero_image: "assets/img/blog/imessage-analysis/hero.jpeg"
+hero_image: "/blog/imessage-analysis/hero.jpeg"
 hero_image_owner: "Thom Holmes"
 hero_image_owner_url: "https://unsplash.com/@thomholmes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
 hero_image_location: "Unsplash"
@@ -23,7 +23,7 @@ After linking the frames I wanted to work with from the local sqlite3 database, 
 
  
 
-<div class="justify-center flex"><img src="/assets/img/blog/imessage-analysis/all_texts.png" alt="Line graph" class=""></div>
+<div class="justify-center flex"><img src="/./blog/imessage-analysis/all_texts.png" alt="Line graph" class=""></div>
 
  
 
@@ -31,7 +31,7 @@ Comparing the total messages per month would not make much sense given that 2019
 
  
 
-<div class="justify-center flex"><img src="/assets/img/blog/imessage-analysis/years.png" alt="Bar chart" class=""></div>
+<div class="justify-center flex"><img src="/./blog/imessage-analysis/years.png" alt="Bar chart" class=""></div>
 
  
 
@@ -43,7 +43,7 @@ Next up, I decided to look at when I was responding or sending text messages. Th
 
  
 
-<div class="justify-center flex"><img src="/assets/img/blog/imessage-analysis/time_of_day.png" alt="Line graph" class=""></div>
+<div class="justify-center flex"><img src="/./blog/imessage-analysis/time_of_day.png" alt="Line graph" class=""></div>
 
  
 
@@ -51,7 +51,7 @@ If you ever want me to respond immediately, 6 pm to 1 am is probably the ideal t
 
  
 
-<div class="justify-center flex"><img src="/assets/img/blog/imessage-analysis/time_heatmap.png" alt="Heat map" class=""></div>
+<div class="justify-center flex"><img src="/./blog/imessage-analysis/time_heatmap.png" alt="Heat map" class=""></div>
 
  
 
@@ -63,7 +63,7 @@ Next up, I decided to plot the conversations between some friends and I, includi
 
  
 
-<div class="justify-center flex"><img src="/assets/img/blog/imessage-analysis/people_comparison.png" alt="Line graph" class=""></div>
+<div class="justify-center flex"><img src="/./blog/imessage-analysis/people_comparison.png" alt="Line graph" class=""></div>
 
  
 
@@ -83,7 +83,7 @@ Now, we all know that if you want to get to know someone you have to look at the
 
  
 
-<div class="justify-center flex"><img src="/assets/img/blog/imessage-analysis/emoijis_sent_and_received.png" alt="Chart of most used emojis" class=""></div>
+<div class="justify-center flex"><img src="/./blog/imessage-analysis/emoijis_sent_and_received.png" alt="Chart of most used emojis" class=""></div>
 
  
 
@@ -91,7 +91,7 @@ To add some granularity, I decided to find the most common emojis in my conversa
 
  
 
-<div class="justify-center flex"><img src="/assets/img/blog/imessage-analysis/all_emojis_convos.png" alt="Chart of most used emojis" class=""></div>
+<div class="justify-center flex"><img src="/./blog/imessage-analysis/all_emojis_convos.png" alt="Chart of most used emojis" class=""></div>
 
  
 

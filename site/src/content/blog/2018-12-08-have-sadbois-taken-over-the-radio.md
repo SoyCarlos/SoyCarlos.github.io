@@ -5,7 +5,7 @@ subtitle: "An Empirical Study on the Moods in Music in the United States"
 reading_duration: 5
 publishDate: 12/08/2018
 blurb: "It is often said that music is a reflection of the society at that time. Turning on the news on any given day often gives bleak news of a new epidemic, or a new study on the poor mental health of the…"
-hero_image: "assets/img/blog/sadbois/hero.jpeg"
+hero_image: "/blog/sadbois/hero.jpeg"
 hero_image_owner: "Mohammad Metri"
 hero_image_owner_url: "https://unsplash.com/photos/1oKxSKSOowE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
 hero_image_location: "Unsplash"
@@ -31,7 +31,7 @@ I started working with a dataset curated by @walkerkq on GitHub (<a href="https:
 
 <br>
 
-<div class="justify-center flex"><img src="/assets/img/blog/sadbois/table.png" alt="Imgae of table" class=""></div>
+<div class="justify-center flex"><img src="/./blog/sadbois/table.png" alt="Imgae of table" class=""></div>
 <div class="text-center">WalkerKQ’s Billboard Top 100 Table</div>
 
 <br>
@@ -44,7 +44,7 @@ Then, I used Spotipy, a lightweight Python library to interact with the Spotify 
 
 <br>
 
-<div class="justify-center flex"><img src="/assets/img/blog/sadbois/table2.png" alt="Imgae of table" class=""></div>
+<div class="justify-center flex"><img src="/./blog/sadbois/table2.png" alt="Imgae of table" class=""></div>
 <div class="text-center">Billboard Table with Valences and Duration</div>
 
 <br>
@@ -58,7 +58,7 @@ In an effort or lack thereof, to avoid trying to reinvent the wheel I decided to
 
 <br>
 
-<div class="justify-center flex"><img src="/assets/img/blog/sadbois/table3.png" alt="Imgae of table" class=""></div>
+<div class="justify-center flex"><img src="/./blog/sadbois/table3.png" alt="Imgae of table" class=""></div>
 <div class="text-center">Adding Google’s Cloud Natural Language Sentiment Analysis</div>
 
 <br>
@@ -67,7 +67,7 @@ Once I had the sentiment value given by Google’s API, which is between -1 bein
 
 <br>
 
-<div class="justify-center flex"><img src="/assets/img/blog/sadbois/gloom_index.png" alt="Imgae of table" class=""></div>
+<div class="justify-center flex"><img src="/./blog/sadbois/gloom_index.png" alt="Imgae of table" class=""></div>
 <div class="text-center">Source: <a href="https://www.rcharlie.com/post/fitter-happier/" target="_blank" class="underline">https://www.rcharlie.com/post/fitter-happier/</a></div>
 
 
@@ -81,14 +81,14 @@ For the final calculation, I normalized all the gloom index values to be between
 
 <br>
 
-<div class="justify-center flex"><img src="/assets/img/blog/sadbois/table4.png" alt="Imgae of table" class=""></div>
+<div class="justify-center flex"><img src="/./blog/sadbois/table4.png" alt="Imgae of table" class=""></div>
 
 <h1 class="text-2xl pt-5 font-black">The Results</h1>
 The first visualization I made was a scatter plot of all the songs by year and their corresponding gloom index.
 
 <br>
 
-<div class="justify-center flex"><img src="/assets/img/blog/sadbois/scatter_plot.png" alt="Scatter plot" class=""></div>
+<div class="justify-center flex"><img src="/./blog/sadbois/scatter_plot.png" alt="Scatter plot" class=""></div>
 <div class="text-center">Scatter Plot of all Songs and their Normalized Gloom Index Value</div>
 
 <br>
@@ -97,7 +97,7 @@ As you can see, this does not show us much. However, once I made the box plot of
 
 <br>
 
-<div class="justify-center flex"><img src="/assets/img/blog/sadbois/box_plot.png" alt="Box plot" class=""></div>
+<div class="justify-center flex"><img src="/./blog/sadbois/box_plot.png" alt="Box plot" class=""></div>
 <div class="text-center">Box Plot of all Songs and their Normalized Gloom Index Value by Decade</div>
 
 <br>
@@ -110,7 +110,7 @@ Finally, I made a line plot of all the years and the average gloom index per yea
 
 <br>
 
-<div class="justify-center flex"><img src="/assets/img/blog/sadbois/line_graph.png" alt="Line Graph" class=""></div>
+<div class="justify-center flex"><img src="/./blog/sadbois/line_graph.png" alt="Line Graph" class=""></div>
 <div class="text-center">Line Plot of the Average Gloom Index Value for Each Year (1965–2015)</div>
 
 <br>
@@ -119,7 +119,7 @@ As seen in the graph, on average songs overall have been getting sadder. With th
 
 <br>
 
-<div class="justify-center flex"><img src="/assets/img/blog/sadbois/scatter_plot2.png" alt="Scatter plot" class=""></div>
+<div class="justify-center flex"><img src="/./blog/sadbois/scatter_plot2.png" alt="Scatter plot" class=""></div>
 <div class="text-center">Scatter Plot of all the Average Gloom Index Value by Year with Fit Line Over it</div>
 
 
@@ -131,7 +131,7 @@ The overall trend appears to be that music, on average, is becoming sadder or mo
 
 <br><br>
 
-<div class="justify-center flex"><img src="/assets/img/blog/sadbois/line_graph2.png" alt="Line Graph" class=""></div>
+<div class="justify-center flex"><img src="/./blog/sadbois/line_graph2.png" alt="Line Graph" class=""></div>
 
 <br>
 

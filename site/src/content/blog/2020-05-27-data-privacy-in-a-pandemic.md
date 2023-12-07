@@ -5,7 +5,7 @@ subtitle: "Analyzing Different Approaches to Covid-19 Contact Tracing"
 reading_duration: 6
 publishDate: 05/27/2020
 blurb: "As nations around the world begin to gradually reopen, governments are looking at all options in hopes of containing future outbreaks Their holy grail: Contact Tracing Apps"
-hero_image: "assets/img/blog/data-privacy-pandemic/hero.jpeg"
+hero_image: "/blog/data-privacy-pandemic/hero.jpeg"
 hero_image_owner: "Tim Mossholder"
 hero_image_owner_url: "https://unsplash.com/@timmossholder?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
 hero_image_location: "Unsplash"
@@ -33,7 +33,7 @@ So, what have governments and private companies been doing to bring the process 
 
  
 
-<div class="flex justify-center"><img src="/assets/img/blog/data-privacy-pandemic/electric_cabinets.jpg" alt="Room full of servers" class=""></div>
+<div class="flex justify-center"><img src="/./blog/data-privacy-pandemic/electric_cabinets.jpg" alt="Room full of servers" class=""></div>
 <div class="text-center">Photo by <a href="https://unsplash.com/@ismailenesayhan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" class="underline">İsmail Enes Ayhan
 </a>on <a href="https://unsplash.com/s/photos/centralized-server?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" class="underline">Unsplash</a>
 </div>
@@ -80,7 +80,7 @@ As a result of moves like these, a programmer in <a href="https://www.buzzfeedne
 
  
 
-<div class="flex justify-center"><img src="/assets/img/blog/data-privacy-pandemic/person_on_phone.jpeg" alt="Woman wearing mask looking at phone." class=""></div>
+<div class="flex justify-center"><img src="/./blog/data-privacy-pandemic/person_on_phone.jpeg" alt="Woman wearing mask looking at phone." class=""></div>
 <div class="text-center">Photo by <a href="https://www.pexels.com/es-es/@ketut-subiyanto?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" target="_blank" class="underline">Ketut Subiyanto</a> on <a href="https://www.pexels.com/es-es/foto/mujer-telefono-inteligente-vehiculo-efecto-desenfocado-4429299/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels" target="_blank" class="underline">Pexels</a>
 </div>
 

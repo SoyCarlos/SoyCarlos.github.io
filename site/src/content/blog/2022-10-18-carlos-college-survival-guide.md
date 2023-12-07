@@ -5,7 +5,7 @@ subtitle: "College Tips for 1st Gen Latines and Friends"
 reading_duration: 11
 publishDate: 10/18/2022
 blurb: "Having been the first in my immediate family to graduate from a 4-year University (5-year in my case, let's just say I took a 1-year victory lap), I realized there are a lot of unwritten rules & tips to succeed that you will not know unless you have family, friends, or mentors who have already completed their college careers. So, in the spirit of Latino Heritage Month and my little brother starting his freshmen year, I have decided to write up some of my learnings to help other 1st Generation Latines."
-hero_image: "assets/img/blog/college-survival-guide/hero.jpg"
+hero_image: "/blog/college-survival-guide/hero.jpg"
 hero_image_owner: "Ray Zhou"
 hero_image_owner_url: "https://unsplash.com/@rayzhou?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
 hero_image_location: "Unsplash"
