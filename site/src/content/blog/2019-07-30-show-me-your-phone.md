@@ -1,17 +1,15 @@
 ---
-layout: post
+isDraft: False
 title: "Show Me Your Phone: Analyzing My Text Messages"
 subtitle: ""
-date: 2019-07-30 10:00:00AM
-date-written: "July 7, 2019"
+reading_duration: 4
+publishDate: 07/30/2019
 blurb: "Recently, at work, I have been working with some Natural Language Processing techniques. Which, got me thinking. Is there any way I can use any of these techniques on my conversations."
 hero_image: "assets/img/blog/imessage-analysis/hero.jpeg"
 hero_image_owner: "Thom Holmes"
 hero_image_owner_url: "https://unsplash.com/@thomholmes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
 hero_image_location: "Unsplash"
 hero_image_location_url: "https://unsplash.com/search/photos/texting?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-reading_duration: "4"
-data_lyket_id: "imessage-analysis"
 ---
 Recently, at work, I have been working with some Natural Language Processing techniques. Which, got me thinking. Is there any way I can use any of these techniques on my conversations.
 

@@ -1,17 +1,15 @@
 ---
-layout: post
+isDraft: False
 title: "Have Sad Bois Taken Over the Radio?"
 subtitle: "An Empirical Study on the Moods in Music in the United States"
-date: 2018-12-08 10:00:00AM
-date-written: "December 8, 2018"
+reading_duration: 5
+publishDate: 12/08/2018
 blurb: "It is often said that music is a reflection of the society at that time. Turning on the news on any given day often gives bleak news of a new epidemic, or a new study on the poor mental health of the…"
 hero_image: "assets/img/blog/sadbois/hero.jpeg"
 hero_image_owner: "Mohammad Metri"
 hero_image_owner_url: "https://unsplash.com/photos/1oKxSKSOowE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
 hero_image_location: "Unsplash"
 hero_image_location_url: "https://unsplash.com/search/photos/music?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-reading_duration: "5"
-data_lyket_id: "sadbois"
 ---
 <h1 class="text-2xl pt-5 font-black">Introduction</h1>
 

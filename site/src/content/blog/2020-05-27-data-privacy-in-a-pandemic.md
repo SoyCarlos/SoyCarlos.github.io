@@ -1,17 +1,15 @@
 ---
-layout: post
+isDraft: False
 title: "Data Privacy In a Pandemic"
 subtitle: "Analyzing Different Approaches to Covid-19 Contact Tracing"
-date: 2020-05-27 10:00:00AM
-date-written: "May 27, 2020"
+reading_duration: 6
+publishDate: 05/27/2020
 blurb: "As nations around the world begin to gradually reopen, governments are looking at all options in hopes of containing future outbreaks Their holy grail: Contact Tracing Apps"
 hero_image: "assets/img/blog/data-privacy-pandemic/hero.jpeg"
 hero_image_owner: "Tim Mossholder"
 hero_image_owner_url: "https://unsplash.com/@timmossholder?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
 hero_image_location: "Unsplash"
 hero_image_location_url: "https://unsplash.com/s/photos/corona?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-reading_duration: "6"
-data_lyket_id: "pandemic-privacy"
 ---
 Originally published on <a href="https://medium.com/towards-data-science/data-privacy-in-a-pandemic-901e828b850a" target="_blank" class="italic underline">Towards Data Science</a>
 

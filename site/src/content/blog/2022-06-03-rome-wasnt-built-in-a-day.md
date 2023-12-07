@@ -1,17 +1,15 @@
 ---
-layout: post
+isDraft: False
 title: "Rome Wasn't Built In a Day: But This Website Was"
 subtitle: "My Thought Process Going into Rebuilding My Site From Scratch"
-date: 2022-06-03 08:00:00AM
-date-written: "June 3, 2022"
+reading_duration: 9
+publishDate: 06/03/2022
 blurb: "When I first built out my personal website during my undergrad in January 2018, I took the course most students in tech take and used a free template from HTML5 UP. Specifically, I used the Dimension template and it was great. It served its purpose for an undergrad student with limited experience with HTML/CSS that was looking for internships."
 hero_image: "assets/img/blog/rome-new-website/hero.jpg"
 hero_image_owner: "David Köhler"
 hero_image_owner_url: "https://unsplash.com/es/@davidkhlr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
 hero_image_location: "Unsplash"
 hero_image_location_url: "https://unsplash.com/s/photos/rome?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-reading_duration: "9"
-data_lyket_id: "rome-website"
 ---
   
 <h1 class="text-2xl pt-5 font-black">The Precursors</h1>

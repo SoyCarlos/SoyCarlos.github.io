@@ -1,17 +1,15 @@
 ---
-layout: post
+isDraft: False
 title: "Year 1 As A Data Engineer: What I Learned"
 subtitle: "What I didn't expect and what I grew to appreciate after working as a Data Engineer"
-date: 2022-08-20 07:00:00AM
-date-written: "Aug 20, 2022"
+reading_duration: 4
+publishDate: 08/20/2022
 blurb: "In my mind, there was some open source software that all companies used to pipe data from one area to another. I thought absolutely everything was done in Airflow and Spark. I'll tell you now, besides a very short stint with Airflow, I do not use either of these tools today. Turns out the Data Engineering space is vibrant and has an insane amount of offerings for tools."
 hero_image: "assets/img/blog/data-engineer-learnings/hero.jpg"
 hero_image_owner: "Nana Smirnova"
 hero_image_owner_url: "https://unsplash.com/@nananadolgo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
 hero_image_location: "Unsplash"
 hero_image_location_url: "https://unsplash.com/s/photos/data-warehouse?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-reading_duration: "4"
-data_lyket_id: "data-engineer-learnings"
 ---
 Allow me to provide a bit of background. Before my current role and before graduating from Cal in May '21, I was planning to find a Data Science role. I was hoping it would be relatively simple given that I had several Data Science roles & internships under my belt. Unfortunately, not only was the market not too favorable to folks looking for entry-level Data Science roles with only a Bachelor's, but more importantly, I did not begin my job search until a few weeks before graduating. I did not even ramp up my job search until after graduating, so by that time, the vast majority of companies who would hire New Grad Data Scientists had already found their candidates. Around that time, I became curious about Data Engineering and took a couple of courses on DataCamp. Coincidentally, and lucky for me, my current company, [Entidad](https://www.entidad.io/), found my profile on [Diversify Tech](https://www.diversifytech.co/) and were in search of a Data Engineer. So, I dove right in.
 

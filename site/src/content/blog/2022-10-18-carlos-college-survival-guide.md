@@ -1,17 +1,15 @@
 ---
-layout: post
+isDraft: False
 title: "Carlos' Declassified College Survival Guide"
 subtitle: "College Tips for 1st Gen Latines and Friends"
-date: 2022-10-18 07:00:00AM
-date-written: "Oct 18, 2022"
+reading_duration: 11
+publishDate: 10/18/2022
 blurb: "Having been the first in my immediate family to graduate from a 4-year University (5-year in my case, let's just say I took a 1-year victory lap), I realized there are a lot of unwritten rules & tips to succeed that you will not know unless you have family, friends, or mentors who have already completed their college careers. So, in the spirit of Latino Heritage Month and my little brother starting his freshmen year, I have decided to write up some of my learnings to help other 1st Generation Latines."
 hero_image: "assets/img/blog/college-survival-guide/hero.jpg"
 hero_image_owner: "Ray Zhou"
 hero_image_owner_url: "https://unsplash.com/@rayzhou?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
 hero_image_location: "Unsplash"
 hero_image_location_url: "https://unsplash.com/s/photos/uc-berkeley?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-reading_duration: "11"
-data_lyket_id: "college-survival-guide"
 ---
 Note #1: I was originally supposed to publish this a month ago at the beginning of Latino History Month, but life happens. It's never too late to apply these tips, so here they are anyway. I tried to keep it short where I could but expanded where needed. If you think you can benefit from these tips, you don't have to read them all at once. Bookmark it, and come back later.
 
