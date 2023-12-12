@@ -1,8 +1,52 @@
---- 
-import Layout from '../layouts/Primary.astro';
+---
+import Layout from "../layouts/Primary.astro";
+import ResumeHero from "../components/ResumeHero.astro";
+import EducationResume from "../components/EducationResume.astro";
+import SkillsResume from "../components/SkillsResume.astro";
+import ResumeEntry from "../components/ResumeEntry.jsx";
+import { getCollection } from "astro:content";
+
+var education = await getCollection("education");
+var skills = await getCollection("skills");
+var volunteer = await getCollection("volunteer");
+
+const jobs = await Astro.glob("../content/experience/*.md");
 ---
 
-<Layout title="Open Patterson">
-	<main>
-	</main>
+<Layout title="Carlos E. Ortega">
+  <main>
+    <div class="flex flex-col justify-center items-center">
+      <ResumeHero />
+      <div
+        class="m-5 text-left flex-col w-4/5 pb-5 border-b-2 border-gray-400 lg:w-3/5 xxl:w-2/4"
+      >
+        <div class="text-2xl font-black">Education</div>
+        {education.map((school) => <EducationResume education={school} />)}
+      </div>
+      <div
+        class="m-5 text-left flex-col w-4/5 pb-5 border-b-2 border-gray-400 lg:w-3/5 xxl:w-2/4"
+      >
+        <div class="text-2xl font-black">Experience</div>
+        {
+          jobs.map((job: any) => (
+            <ResumeEntry
+              org={job.frontmatter.org}
+              website={job.frontmatter.website}
+              position={job.frontmatter.position}
+              location={job.frontmatter.location}
+              duration={job.frontmatter.duration}
+              summary={job.compiledContent()}
+            />
+          ))
+        }
+      </div>
+      <div
+        class="m-5 text-left flex-col w-4/5 pb-5 border-b-2 border-gray-400 lg:w-3/5 xxl:w-2/4"
+      >
+        <div class="text-2xl font-black">Skills</div>
+        {skills.map((skill) => <SkillsResume skills={skill} />)}
+      </div>
+    </div>
+  </main>
 </Layout>
+ ../components/ResumeEntry.jsx
