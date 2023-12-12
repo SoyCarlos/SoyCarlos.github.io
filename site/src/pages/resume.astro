@@ -7,10 +7,10 @@ import ResumeEntry from "../components/ResumeEntry.jsx";
 import { getCollection } from "astro:content";
 
 var education = await getCollection("education");
-var skills = await getCollection("skills");
-var volunteer = await getCollection("volunteer");
-
 const jobs = await Astro.glob("../content/experience/*.md");
+var skills = await getCollection("skills");
+const volunteers = await Astro.glob("../content/volunteer/*.md");
+
 ---
 
 <Layout title="Carlos E. Ortega">
@@ -46,7 +46,23 @@ const jobs = await Astro.glob("../content/experience/*.md");
         <div class="text-2xl font-black">Skills</div>
         {skills.map((skill) => <SkillsResume skills={skill} />)}
       </div>
+	  <div
+	  class="m-5 text-left flex-col w-4/5 pb-5 border-b-2 border-gray-400 lg:w-3/5 xxl:w-2/4"
+	>
+	  <div class="text-2xl font-black">Leadership & Volunteering</div>
+	  {
+		volunteers.map((job: any) => (
+		  <ResumeEntry
+			org={job.frontmatter.org}
+			website={job.frontmatter.website}
+			position={job.frontmatter.position}
+			location={job.frontmatter.location}
+			duration={job.frontmatter.duration}
+			summary={job.compiledContent()}
+		  />
+		))
+	  }
+	</div>
     </div>
   </main>
 </Layout>
- ../components/ResumeEntry.jsx

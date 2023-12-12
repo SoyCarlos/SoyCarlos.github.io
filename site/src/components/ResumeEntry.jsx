@@ -7,7 +7,7 @@ const ResumeEntry = ({ org, website, position, location, duration, summary }) =>
                 <a href={website} target="_blank">{org}</a>
             </div>
             <div className="text-sm">{position} &bull; {location} &bull; {duration}</div>
-            <div className="text-sm list-disc pl-4" dangerouslySetInnerHTML={{ __html: summary }}></div>
+            <div className="text-sm pl-4" dangerouslySetInnerHTML={{ __html: summary }}></div>
         </div>
     );
 };
