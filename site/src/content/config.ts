@@ -17,6 +17,16 @@ const blogCollection = defineCollection({
     })
 }); 
 
+const notesCollection = defineCollection({
+    type:'content',
+    schema: z.object({
+        isDraft: z.boolean(),
+        title: z.string(),
+        publishDate: z.string(),
+        updatedDate: z.string(),
+    })
+}); 
+
 const experienceCollection = defineCollection({
     type:'content',
     schema: z.object({
@@ -41,7 +51,7 @@ const educationCollection = defineCollection({
 });
 
 const volunteerCollection = defineCollection({
-    type:'data',
+    type:'content',
     schema: z.object({
         org: z.string(),
         website: z.string().url(),
@@ -64,6 +74,7 @@ const skillsCollection = defineCollection({
 
 export const collections = {
     blog: blogCollection,
+    notes: notesCollection,
     experience: experienceCollection,
     education: educationCollection,
     volunteer: volunteerCollection,
