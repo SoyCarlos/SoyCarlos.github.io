@@ -58,7 +58,6 @@ const volunteerCollection = defineCollection({
         position: z.string(),
         location: z.string(),
         duration: z.string(),
-        summary: z.array(z.string()),
     }),
 });
 
