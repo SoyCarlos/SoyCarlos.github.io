@@ -40,7 +40,9 @@ I picked this book up on a whim—didn’t even read the description, just saw m
 
 If you’re into coming-of-age stories with a sprinkle of science fiction, this one’s an easy recommendation. And even if sci-fi isn’t usually your thing, don’t worry: the futuristic elements are subtle and never overpower the heart of the story. At its core, this is about a protagonist figuring out what it means to be human—abstractly, not in a "robot trying to feel feelings" kind of way.
 
-**Rating:** 4/5 
+**Rating:** ⭐⭐⭐⭐ out of 5, I recommend.
+
+[My ratings explained.](https://www.carlos.soy/notes/personal-book-rating-system)
 
 ### Possible Spoilers Ahead
 I have recently been trying to get more serious about reading the backlog of books I have bought over the last few years. I've had the bad tendency to buy a book based on a recommendation, good description, or nice cover but not get past the first chapter. 
