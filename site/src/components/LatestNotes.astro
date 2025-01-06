@@ -1,28 +1,49 @@
 ---
-import { getCollection } from 'astro:content';
-var notes = await getCollection('notes', ({ data }: { data: { isDraft: boolean } }) => {
+import { getCollection } from "astro:content";
+var notes = await getCollection(
+  "notes",
+  ({ data }: { data: { isDraft: boolean } }) => {
     return data.isDraft !== true;
-});
-
+  }
+);
 
 notes = notes.sort((a, b) => {
-    const dateA = new Date(a.data.publishDate);
-    const dateB = new Date(b.data.publishDate);
-    return dateB.getTime() - dateA.getTime();
+  const dateA = new Date(a.data.publishDate);
+  const dateB = new Date(b.data.publishDate);
+  return dateB.getTime() - dateA.getTime();
 });
 
-
+const allTags = Array.from(
+  new Set(notes.flatMap((note) => note.data.tags || []))
+);
 ---
-<div class="text-4xl font-bold py-10 text-center">Notes</div>
-{notes.map((note) => (
-<div class="m-auto w-full px-2 md:px-0 md:w-2/3">
-    <ul>
-        <div class="flex-col">
-            <li>
-                <a href={`/notes/${note.slug}`} class="font-bold text-2xl hover:underline md:text-4xl">{note.data.title}</a>
-                <a href={`/notes/${note.slug}`} class="flex">{note.data.publishDate}</a>
-            </li>
-        </div>
-    </ul>
+
+<div class="text-4xl font-bold py-10 text-center">Notes & Ramblings</div>
+<div class="flex flex-wrap gap-2 justify-center">
+  {
+    allTags.map((tag) => (
+      <span class="border border-yellow-500 hover:bg-slate-300 rounded px-2 py-1"><a href={`/tags/${tag}/`}>{tag}</a></span>
+    ))
+  }
 </div>
-))}
+{
+  notes.map((note) => (
+    <div class="m-auto w-full px-2 md:px-0 md:w-2/3">
+      <ul>
+        <div class="flex-col">
+          <li>
+            <a
+              href={`/notes/${note.slug}`}
+              class="font-bold text-2xl hover:underline md:text-4xl"
+            >
+              {note.data.title}
+            </a>
+            <a href={`/notes/${note.slug}`} class="flex">
+              {note.data.publishDate}
+            </a>
+          </li>
+        </div>
+      </ul>
+    </div>
+  ))
+}

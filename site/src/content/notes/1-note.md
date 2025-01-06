@@ -3,6 +3,7 @@ isDraft: false
 title: Personal Markdown Note
 publishDate: 12/12/2023
 updatedDate: 12/12/2023
+tags: ["misc"]
 ---
 This is a note.  
 

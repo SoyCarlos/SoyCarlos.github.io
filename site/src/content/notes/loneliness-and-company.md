@@ -3,6 +3,7 @@ isDraft: false
 title: Loneliness & Company
 publishDate: 12/23/24
 updatedDate: 12/23/24
+tags: ["reading",]
 ---
 
 ### Coming of Age meets Black Mirror

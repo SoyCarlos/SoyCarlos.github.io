@@ -3,6 +3,7 @@ isDraft: false
 title: Personal Book Rating System
 publishDate: 12/23/24
 updatedDate: 12/23/24
+tags: ["reading"]
 ---
 
 ![Interior of the Vasconcelos Library in Mexico City
