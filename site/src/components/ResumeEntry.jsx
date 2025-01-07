@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ResumeEntry = ({ org, website, position, location, duration, summary }) => {
     return (
         <div className="pb-1">
