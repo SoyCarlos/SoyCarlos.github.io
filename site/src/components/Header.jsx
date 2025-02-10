@@ -14,12 +14,12 @@ export default function Header() {
 
   return (
     <header className="border-b-2 border-yellow-500">
-      <nav className="relative container lg:w-2/3 mx-auto py-3 px-6 md:px-0 xxl:w-2/4">
+      <nav className="relative container lg:w-2/3 mx-auto py-3 px-6 xxl:w-2/4">
         {/* Flex Container */}
         <div className="flex items-center justify-between w-full">
           {/* Logo */}
           <div className="text-left text-2xl">
-            <a href="/">Carlos EOS</a>
+            <a href="/">Carlos Ortega</a>
           </div>
           <div className="flex md:hidden">
           <button
