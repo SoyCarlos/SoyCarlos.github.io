@@ -6,7 +6,7 @@ I consider myself a jack of all trades, with experience in Software Development,
 - ⦁ ***[Data Engineer at Entidad](https://www.entidad.io/)***, a small social startup, where I was the first Data Engineer and data hire in general. I spent my time building out the data reporting infrastructure to support clients like the ***[United Farmworkers Foundation](https://www.ufwfoundation.org/)***.
 - ⦁ ***[Data Science Fellow at the U.S. Census Bureau](https://blog.codingitforward.com/meet-the-2019-fellows-u-s-census-bureau-52b87c481bb1)*** where I worked on ***[automating the maintenance of public datasets and frame matching](https://github.com/codingitforward/cdfdemoday2019/blob/master/Automating_Frame_Maintenance_and_Frame_Matching.pdf)***.
 - ⦁ ***[Data Peer Advising Fellow at the UC Berkeley Library](https://lib.berkeley.edu/research/teach-learn/fellows?section=2018-19-fellows)*** where I consulted on incorporating data science techniques into the library's curriculum and hosted workshops on data science and data literacy.
-- ⦁ *NLP x Gastrointestinal Research* through UCSF and ***[UC Berkeley Data Discovery](https://cdss.berkeley.edu/discovery)***.
+- ⦁ *NLP x Gastrointestinal Research* through UCSF and ***[UC Berkeley Data Discovery](https://cdss.berkeley.edu/discovery)*** where I annotated medical notes and created a simple binary classifier to detect presence of gastrointestinal problems.
 - ⦁ ***[Associate Editor at Towards Data Science](https://towardsdatascience.com/)*** where I helped authors edit and publish their articles.
 - ⦁ ***[Executive Director, Post-Production Director, and Video Editor at CalTV](https://www.caltv.com/)***, UC Berkeley's student-run media organization.  
 <br />  
