@@ -11,3 +11,4 @@ duration: Aug, 2021 — Oct, 2022
   &bull; Developed data pipelines to funnel multiple data sources into a data lake for reporting needs.  
   &bull; Utilized multiple AWS services, including DynamoDB, RDS, EC2, and Step Functions, to store, manage, and process millions of records of data.  
   &bull; Conducted data analysis and data modeling, ensuring data accuracy and reliability for clients.   
+  &bull; Replaced Airflow orchestration with custom AWS solution to decrease costs 98%.  
