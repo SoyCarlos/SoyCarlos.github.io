@@ -1,9 +1,9 @@
 ---
-isDraft: false
 title: Creating Github Alias
-tags: []
 publishDate: 02/10/2025
 updatedDate: 02/10/2025
+tags:
+  - git
 ---
 
 List all existing alias:  

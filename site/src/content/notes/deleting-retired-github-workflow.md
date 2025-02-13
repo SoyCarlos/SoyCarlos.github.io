@@ -1,9 +1,9 @@
 ---
-isDraft: false
 title: Deleting Retired Github Workflow
 publishDate: 02/10/2025
 updatedDate: 02/10/2025
-tags: []
+tags:
+  - git
 ---
 
 1. Cancel any currently running workflows that you want to delete. [Link](https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/canceling-a-workflow)

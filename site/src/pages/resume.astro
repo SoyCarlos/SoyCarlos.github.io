@@ -7,10 +7,21 @@ import ResumeEntry from "../components/ResumeEntry.jsx";
 import { getCollection } from "astro:content";
 
 var education = await getCollection("education");
-const jobs = await Astro.glob("../content/experience/*.md");
+const jobFiles = await Astro.glob("../content/experience/*.md");
+const jobs = await Promise.all(
+  jobFiles.map(async (file) => {
+    const content = await file.compiledContent();
+    return { ...file, content };
+  })
+)
 var skills = await getCollection("skills");
-const volunteers = await Astro.glob("../content/volunteer/*.md");
-
+const volunteerFiles = await Astro.glob("../content/volunteer/*.md");
+const volunteers = await Promise.all(
+  volunteerFiles.map(async (file) => {
+    const content = await file.compiledContent();
+    return { ...file, content };
+  })
+);
 ---
 
 <Layout title="Carlos E. Ortega">
@@ -35,7 +46,7 @@ const volunteers = await Astro.glob("../content/volunteer/*.md");
               position={job.frontmatter.position}
               location={job.frontmatter.location}
               duration={job.frontmatter.duration}
-              summary={job.compiledContent()}
+              summary={job.content}
             />
           ))
         }
@@ -58,7 +69,7 @@ const volunteers = await Astro.glob("../content/volunteer/*.md");
 			position={job.frontmatter.position}
 			location={job.frontmatter.location}
 			duration={job.frontmatter.duration}
-			summary={job.compiledContent()}
+			summary={job.content}
 		  />
 		))
 	  }

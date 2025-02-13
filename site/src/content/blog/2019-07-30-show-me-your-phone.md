@@ -1,5 +1,4 @@
 ---
-isDraft: False
 title: "Show Me Your Phone: Analyzing My Text Messages"
 subtitle: ""
 reading_duration: 4

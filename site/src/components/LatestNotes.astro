@@ -1,11 +1,9 @@
 ---
 import { getCollection } from "astro:content";
 var notes = await getCollection(
-  "notes",
-  ({ data }: { data: { isDraft: boolean } }) => {
-    return data.isDraft !== true;
-  }
-);
+  "notes",  ({ data }) => {
+    return data.draft !== true;
+});
 
 notes = notes.sort((a, b) => {
   const dateA = new Date(a.data.publishDate);
