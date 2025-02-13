@@ -1,5 +1,4 @@
 ---
-isDraft: False
 title: "Data Privacy In a Pandemic"
 subtitle: "Analyzing Different Approaches to Covid-19 Contact Tracing"
 reading_duration: 6

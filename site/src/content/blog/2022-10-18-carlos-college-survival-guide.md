@@ -1,5 +1,4 @@
 ---
-isDraft: False
 title: "Carlos' Declassified College Survival Guide"
 subtitle: "College Tips for 1st Gen Latines and Friends"
 reading_duration: 11

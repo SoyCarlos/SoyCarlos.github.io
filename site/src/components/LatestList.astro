@@ -1,7 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
-var posts = await getCollection('blog', ({ data }: { data: { isDraft: boolean } }) => {
-    return data.isDraft !== true;
+var posts = await getCollection(
+  "blog",  ({ data }) => {
+    return data.draft !== true;
 });
 
 

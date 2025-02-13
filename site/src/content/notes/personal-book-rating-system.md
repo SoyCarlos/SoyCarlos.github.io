@@ -1,5 +1,4 @@
 ---
-isDraft: false
 title: Personal Book Rating System
 publishDate: 12/23/24
 updatedDate: 12/23/24

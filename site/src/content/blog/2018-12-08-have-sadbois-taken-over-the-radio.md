@@ -1,5 +1,4 @@
 ---
-isDraft: False
 title: "Have Sad Bois Taken Over the Radio?"
 subtitle: "An Empirical Study on the Moods in Music in the United States"
 reading_duration: 5

@@ -1,5 +1,4 @@
 ---
-isDraft: False
 title: "Rome Wasn't Built In a Day: But This Website Was"
 subtitle: "My Thought Process Going into Rebuilding My Site From Scratch"
 reading_duration: 9

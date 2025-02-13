@@ -1,5 +1,4 @@
 ---
-isDraft: False
 title: "Year 1 As A Data Engineer: What I Learned"
 subtitle: "What I didn't expect and what I grew to appreciate after working as a Data Engineer"
 reading_duration: 4
