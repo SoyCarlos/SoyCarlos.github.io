@@ -1,9 +1,9 @@
 ---
-title: Upgrading Astro v3 to v5
-tags:
-  - astro
+title: Upgrading Astro From v3 to v5
 publishDate: 2/12/25
 updatedDate: 2/12/25
+tags:
+  - astro
 ---
 
 I am typically not one to upgrade packages and framework until absolutely necessary for interesting new features or security reasons. Well, the time has come for me to upgrade my Astro site from v3.6 to v5.2.  
@@ -58,7 +58,11 @@ Hybrid rendering is removed and merged with static, which is the default. So mus
 
 ## Content Collections
 
-Content collections are now deprecated. They should still work for now, possibly with some breaking changes. As long as my present use case works, I'll leave them and focus on the stability of the new site before upgrading them. [Guide to upgrading content collections.]([https://docs.astro.build/en/guides/content-collections/](https://docs.astro.build/en/guides/upgrade-to/v5/#legacy-v20-content-collections-api))  
+Content collections are now deprecated. They should still work for now, possibly with some breaking changes. As long as my present use case works, I'll leave them and focus on the stability of the new site before upgrading them. [Guide to upgrading content collections]([https://docs.astro.build/en/guides/content-collections/](https://docs.astro.build/en/guides/upgrade-to/v5/#legacy-v20-content-collections-api)). The only change I needed to make was fixing a malformed `getCollection` call causing the following issue: 
+```
+No overload matches this call.
+```
+But, this was an easy fix.
 
 ## Changed Typescript configuration - [env.d.ts](https://docs.astro.build/en/guides/upgrade-to/v5/#changed-typescript-configuration)
 Delete `env.d.ts` and add the following to `.tsconfig`:  
