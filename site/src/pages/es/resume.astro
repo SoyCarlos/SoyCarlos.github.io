@@ -1,21 +1,21 @@
 ---
 import Layout from "@layouts/Primary.astro";
 import ResumeHero from "@components/ResumeHero.astro";
-import EducationResume from "@components/EducationResume.astro";
+import EducationResume from "@components/es/EducationResume.astro";
 import SkillsResume from "@components/SkillsResume.astro";
 import ResumeEntry from "@components/ResumeEntry.jsx";
 import { getCollection } from "astro:content";
 
-var education = await getCollection("education");
-const jobFiles = await Astro.glob("@content/experience/*.md");
+var education = await getCollection("education-es");
+const jobFiles = await Astro.glob("@content/experience-es/*.md");
 const jobs = await Promise.all(
   jobFiles.map(async (file) => {
     const content = await file.compiledContent();
     return { ...file, content };
   })
 )
-var skills = await getCollection("skills");
-const volunteerFiles = await Astro.glob("@content/volunteer/*.md");
+var skills = await getCollection("skills-es");
+const volunteerFiles = await Astro.glob("@content/volunteer-es/*.md");
 const volunteers = await Promise.all(
   volunteerFiles.map(async (file) => {
     const content = await file.compiledContent();
@@ -31,13 +31,13 @@ const volunteers = await Promise.all(
       <div
         class="m-5 text-left flex-col w-4/5 pb-5 border-b-2 border-gray-400 lg:w-3/5 xxl:w-2/4"
       >
-        <div class="text-2xl font-black">Education</div>
+        <div class="text-2xl font-black">Educación</div>
         {education.map((school) => <EducationResume education={school} />)}
       </div>
       <div
         class="m-5 text-left flex-col w-4/5 pb-5 border-b-2 border-gray-400 lg:w-3/5 xxl:w-2/4"
       >
-        <div class="text-2xl font-black">Experience</div>
+        <div class="text-2xl font-black">Experiencia</div>
         {
           jobs.map((job: any) => (
             <ResumeEntry
@@ -54,13 +54,13 @@ const volunteers = await Promise.all(
       <div
         class="m-5 text-left flex-col w-4/5 pb-5 border-b-2 border-gray-400 lg:w-3/5 xxl:w-2/4"
       >
-        <div class="text-2xl font-black">Skills</div>
+        <div class="text-2xl font-black">Habilidades</div>
         {skills.map((skill) => <SkillsResume skills={skill} />)}
       </div>
 	  <div
 	  class="m-5 text-left flex-col w-4/5 pb-5 border-b-2 border-gray-400 lg:w-3/5 xxl:w-2/4"
 	>
-	  <div class="text-2xl font-black">Leadership & Volunteering</div>
+	  <div class="text-2xl font-black">Liderazgo y Voluntariado</div>
 	  {
 		volunteers.map((job: any) => (
 		  <ResumeEntry

@@ -1,0 +1,15 @@
+¡Hola! Soy Carlos Ortega, Ingeniero de Software y Analista de Datos del ***[Valle Central de California](https://es.wikipedia.org/wiki/Valle_Central_(California))***. Durante el día, trabajo en proyectos freelance y en ***[Civvy](https://www.civvy.ai/)***. Por las noches, colaboro en ***[Open Patterson](https://www.openpatterson.org/)***, una iniciativa cívica voluntaria enfocada en desarrollar proyectos independientes para la comunidad y en alianzas con organizaciones locales sin fines de lucro.  
+<br />
+Me considero un todólogo, con experiencia en Desarrollo de Software, Análisis/Ciencia de Datos y Producción de Medios. A lo largo de la universidad (y después), he explorado diferentes caminos para perfeccionar mis habilidades en varias disciplinas.  
+<br />
+- ⦁ ***[Ingeniero de Software en Amazon](https://sell.amazon.com/programs/supply-chain)*** en el equipo de Cadena de Suministro, donde trabajé en ***[Project Santos](https://www.forbes.com/sites/quickerbettertech/2021/09/12/amazon-is-creating-a-pos-system-to-compete-with-shopify-and-paypaland-other-small-business-tech-news/)***.
+- ⦁ ***[Ingeniero de Datos en Entidad](https://www.entidad.io/)***, una pequeña startup con enfoque social, donde fui el primer ingeniero y contratado de datos en general. Me encargué de construir la infraestructura de reportes de datos para apoyar a clientes como la ***[United Farmworkers Foundation](https://www.ufwfoundation.org/)***.
+- ⦁ ***[Fellow en Ciencia de Datos en la Oficina del Censo de EE.UU.](https://blog.codingitforward.com/meet-the-2019-fellows-u-s-census-bureau-52b87c481bb1)*** donde trabajé en ***[la automatización del mantenimiento de datasets públicos y emparejamiento de marcos de referencia](https://github.com/codingitforward/cdfdemoday2019/blob/master/Automating_Frame_Maintenance_and_Frame_Matching.pdf)***.
+- ⦁ ***[Fellow de Asesoría de Datos en la Biblioteca de UC Berkeley](https://lib.berkeley.edu/research/teach-learn/fellows?section=2018-19-fellows)*** donde asesoré en la integración de técnicas de ciencia de datos en el plan de estudios de la biblioteca y facilité talleres sobre alfabetización y análisis de datos.
+- ⦁ *Investigación en PLN (Procesamiento de Lenguaje Natural) x Gastrointestinal* en conjunto con UCSF y ***[UC Berkeley Data Discovery](https://cdss.berkeley.edu/discovery)*** donde anoté notas médicas y construí un clasificador binario simple para detectar la presencia de problemas gastrointestinales.
+- ⦁ ***[Editor Asociado en Towards Data Science](https://towardsdatascience.com/)*** donde ayudé a autores a editar y publicar sus artículos.
+- ⦁ ***[Director Ejecutivo, Director de Post-Producción y Editor de Video en CalTV](https://caltv.berkeley.edu/)***, la organización estudiantil de medios de UC Berkeley.  
+<br />  
+<br />
+¿Te interesa conectar? La mejor forma es escribirme a <a href="mailto:me@carlos.soy" class="underline font-bold">me@carlos.soy</a>. ¡Exploramos posibilidades, colaboramos y creamos algo extraordinario juntos!  
+<br />

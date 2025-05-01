@@ -15,7 +15,7 @@ __This is also bold?__
 
 [This is a link.](https://www.carlos.soy/)
 
-![This is an image.](../../../public/carlos-notion.png)
+![This is an image.](/assets/carlos-notion.png)
 
 > This is a blockquote.
 

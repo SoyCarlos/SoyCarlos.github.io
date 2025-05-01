@@ -1,0 +1,13 @@
+---
+const { education } = Astro.props;
+---
+<div class="pb-1">
+    <div class="text-xl font-bold"> <a href={education.data.website} target="_blank">{education.data.school}</a></div>
+    <div class="font-bold">{education.data.degree} &bull; {education.data.graduation_date}</div>
+    <div class="text-sm">Cursos Relevantes</div>
+    <ul class="list-disc pl-5">
+        { education.data.course_work.map((course: string) => (
+            <li class="text-sm">{course}</li>
+        )) }
+    </ul>
+</div>

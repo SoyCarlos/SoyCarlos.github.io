@@ -1,5 +1,4 @@
 ---
-import {Content as AboutMe} from '../markdown/about.md';
 ---
 
 <div>
@@ -10,12 +9,10 @@ import {Content as AboutMe} from '../markdown/about.md';
 </div>
 
 <div class="flex flex-col-reverse justify-center items-center lg:flex-row">
-  <div
-    class="text-left w-4/5 pb-10 m-auto lg:pb-0 lg:m-5 lg:w-2/5 xl:my-5 xl:w-2/5 xxl:w-1/4"
-  >
-  <AboutMe />
+  <div class="text-left w-4/5 pb-10 m-auto lg:pb-0 lg:m-5 lg:w-2/5 xl:my-5 xl:w-2/5 xxl:w-1/4">
+    <slot />
   </div>
   <div class="w-3/5 m-auto py-10 relative lg:py-0 lg:w-96 lg:m-5 xl:w-1/5">
-    <img src="carlos-notion.png" alt="Carlos' Notion Avatar" />
+    <img src="/assets/carlos-notion.png" alt="Carlos' Notion Avatar" />
   </div>
 </div>

@@ -8,7 +8,7 @@ I consider myself a jack of all trades, with experience in Software Development,
 - ⦁ ***[Data Peer Advising Fellow at the UC Berkeley Library](https://lib.berkeley.edu/research/teach-learn/fellows?section=2018-19-fellows)*** where I consulted on incorporating data science techniques into the library's curriculum and hosted workshops on data science and data literacy.
 - ⦁ *NLP x Gastrointestinal Research* through UCSF and ***[UC Berkeley Data Discovery](https://cdss.berkeley.edu/discovery)*** where I annotated medical notes and created a simple binary classifier to detect presence of gastrointestinal problems.
 - ⦁ ***[Associate Editor at Towards Data Science](https://towardsdatascience.com/)*** where I helped authors edit and publish their articles.
-- ⦁ ***[Executive Director, Post-Production Director, and Video Editor at CalTV](https://www.caltv.com/)***, UC Berkeley's student-run media organization.  
+- ⦁ ***[Executive Director, Post-Production Director, and Video Editor at CalTV](https://caltv.berkeley.edu/)***, UC Berkeley's student-run media organization.  
 <br />  
 <br />
 Eager to connect? The best way is to email me at <a href="mailto:me@carlos.soy" class="underline font-bold">me@carlos.soy</a>. Let's explore possibilities, collaborate, and create something extraordinary together!  
