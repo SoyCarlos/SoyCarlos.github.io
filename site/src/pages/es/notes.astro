@@ -1,0 +1,13 @@
+--- 
+import Layout from '@layouts/Primary.astro';
+import LatestNotes from '@components/es/LatestNotes.astro';
+import Search from "astro-pagefind/components/Search";
+---
+<Layout title="Carlos E. Ortega">
+	<main>
+		<div class="w-1/3 mx-auto pt-10">
+			<Search id="search" className="pagefind-ui" uiOptions={{ showImages: true }} />
+		</div>
+		<LatestNotes />
+	</main>
+</Layout>

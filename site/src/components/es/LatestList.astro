@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+var posts = await getCollection(
+  "blog-es",  ({ data }) => {
+    return data.draft !== true;
+});
+
+
+posts = posts.sort((a, b) => {
+    const dateA = new Date(a.data.publishDate);
+    const dateB = new Date(b.data.publishDate);
+    return dateB.getTime() - dateA.getTime();
+});
+
+
+---
+<div class="text-4xl font-bold py-10 text-center">Últimas Actualizaciones</div>
+{posts.map((newestPost) => (
+<div class="m-auto w-full px-2 md:px-0 md:w-2/3">
+    <ul>
+        <div class="flex-col">
+            <li>
+                <a href={`/es/blog/${newestPost.slug}`} class="font-bold text-2xl hover:underline md:text-4xl">{newestPost.data.title}</a>
+                <a href={`/es/blog/${newestPost.slug}`} class="flex">{newestPost.data.publishDate}</a>
+                <a href={`/es/blog/${newestPost.slug}`} class="flex pb-10">{newestPost.data.blurb}</a>
+            </li>
+        </div>
+    </ul>
+</div>
+))}

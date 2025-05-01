@@ -1,0 +1,40 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Layout from '@layouts/Primary.astro';
+
+export async function getStaticPaths() {
+  const notes = await getCollection("notes-es");
+  return notes.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+type Props = {
+  entry: CollectionEntry<"notes-es">;
+};
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+<Layout title="Carlos E. Ortega">
+	<main>
+
+        <div class="flex flex-col-reverse justify-center items-center lg:flex-row">
+            <div class="w-4/5 pb-10 m-auto lg:pb-0 lg:m-5 lg:w-3/5 xl:w-3/5 2xl:w-2/4">
+              <div class="font-bold text-2xl text-center md:text-3xl pt-5">{entry.data.title}</div>
+              <div class="text-center text-sm">{entry.data.publishDate}</div>
+              <div class="p-5">
+                <article class="prose lg:prose-xl 2xl:prose-2xl m-auto">
+                  <Content />
+                </article>
+                <div class="flex flex-wrap gap-2 pt-5">
+                  {entry.data.tags.map(tag => (
+                    <span class="border border-yellow-500 hover:bg-slate-300 rounded px-2 py-1"><a href={`/tags/${tag}`}>{tag}</a></span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+</Layout>
