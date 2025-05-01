@@ -3,7 +3,7 @@ title: Creando Alias de Github
 publishDate: 02/10/2025
 updatedDate: 02/10/2025
 tags:
-  - git
+  - git-es
 ---
 
 Listar todos los alias existentes:  

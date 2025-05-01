@@ -2,7 +2,7 @@
 title: Soledad & Compañía
 publishDate: 12/23/24
 updatedDate: 12/23/24
-tags: ["reading",]
+tags: ["lectura",]
 ---
 
 ### Coming of Age se encuentra con Black Mirror

@@ -3,7 +3,7 @@ title: Actualizando Astro de v3 a v5
 publishDate: 2/12/25
 updatedDate: 2/12/25
 tags:
-  - astro
+  - astro-es
 ---
 
 Normalmente no soy de actualizar paquetes y frameworks hasta que sea absolutamente necesario por nuevas características interesantes o razones de seguridad. Bueno, ha llegado el momento de actualizar mi sitio de Astro de v3.6 a v5.2.  

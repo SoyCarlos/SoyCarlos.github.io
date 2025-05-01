@@ -3,7 +3,7 @@ title: "Aventuras en el Home Lab: La Importancia del Acceso de Respaldo"
 publishDate: 4/28/25
 updatedDate: 4/28/25
 tags:
-  - homelab
+  - homelab-es
 ---
 
 Como compartí en mi [última publicación](/es/blog/adventures-in-homelabbing), recientemente me he adentrado en el mundo del homelabbing. Esto es lo que ha sucedido desde entonces:

@@ -3,7 +3,7 @@ title: Eliminar Flujo de Trabajo de GitHub Retirado
 publishDate: 02/10/2025
 updatedDate: 02/10/2025
 tags:
-  - git
+  - git-es
 ---
 
 1. Cancela cualquier flujo de trabajo en ejecución que desees eliminar. [Enlace](https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/canceling-a-workflow)

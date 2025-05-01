@@ -4,7 +4,7 @@ publishDate: 12/12/2023
 updatedDate: 12/12/2023
 draft: false
 tags:
-  - misc
+  - misc-es
 ---
 Esta es una nota.  
 
