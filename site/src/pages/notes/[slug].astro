@@ -17,7 +17,7 @@ type Props = {
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
-<Layout title="Carlos E. Ortega">
+<Layout title={entry.data.title}>
 	<main>
 
         <div class="flex flex-col-reverse justify-center items-center lg:flex-row">
