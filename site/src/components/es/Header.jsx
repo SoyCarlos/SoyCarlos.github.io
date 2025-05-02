@@ -3,18 +3,17 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: "Resume", href: "/resume" },
-  { name: "Blog", href: "/blog" },
-  { name: "Notes & Ramblings", href: "/notes" },
-  { name: "Projects", href: "/projects" },
+  { name: "CV", href: "/es/resume" },
+  { name: "Blog", href: "/es/blog" },
+  { name: "Notas y Divagaciones", href: "/es/notes" },
+  { name: "Proyectos", href: "/es/projects" },
 ];
 
-export default function Header({ currentPath = "/" }) {
+export default function Header({ currentPath = "/es" }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
-  // Convert current path to Spanish version
-  console.log("currentPath", currentPath);
-  const spanishPath = currentPath === "/" ? "/es" : `/es${currentPath}`;
+  // Convert current path to English version
+  const englishPath = currentPath === "/es" ? "/" : currentPath.replace("/es", "");
 
   return (
     <header className="border-b-2 border-yellow-500">
@@ -23,7 +22,7 @@ export default function Header({ currentPath = "/" }) {
         <div className="flex items-center justify-between w-full">
           {/* Logo */}
           <div className="text-left text-2xl">
-            <a href="/">Carlos Ortega</a>
+            <a href="/es">Carlos Ortega</a>
           </div>
           <div className="flex md:hidden">
             <button
@@ -48,12 +47,12 @@ export default function Header({ currentPath = "/" }) {
             ))}
             {/* Language Button */}
             <a
-              href={spanishPath}
+              href={englishPath}
               className="flex items-center space-x-1 px-3 py-2 rounded-md hover:bg-gray-100 transition-colors"
-              title="Español"
+              title="English"
             >
-              <span className="text-xl">🇲🇽</span>
-              <span className="text-sm font-medium">ES</span>
+              <span className="text-xl">🇺🇸</span>
+              <span className="text-sm font-medium">EN</span>
             </a>
           </div>
         </div>
@@ -88,11 +87,11 @@ export default function Header({ currentPath = "/" }) {
                 ))}
                 {/* Language Button for Mobile */}
                 <a
-                  href={spanishPath}
+                  href={englishPath}
                   className="-mx-3 flex items-center space-x-2 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
-                  <span className="text-xl">🇲🇽</span>
-                  <span>Español</span>
+                  <span className="text-xl">🇺🇸</span>
+                  <span>English</span>
                 </a>
               </div>
             </div>
