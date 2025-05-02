@@ -1,3 +1,15 @@
 {
-  "rewrites": [{ "source": "/:path*", "destination": "/:path.html" }]
+  "rewrites": [{ "source": "/:path*", "destination": "/:path.html" }],
+  "redirects": [
+    {
+      "source": "/es/404",
+      "destination": "/es",
+      "statusCode": 301
+    },
+    {
+      "source": "/404",
+      "destination": "/",
+      "statusCode": 301
+    }
+  ]
 }
