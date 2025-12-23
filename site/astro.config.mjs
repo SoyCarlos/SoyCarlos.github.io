@@ -16,8 +16,7 @@ export default defineConfig({
   renderers: ["@astrojs/renderer-react"],
   site: 'https://www.carlos.soy/',
   server: {
-    port: process.env.PORT || 4321,
-    host: true
+    host: '0.0.0.0'
   },
   vite: {
     plugins: [tailwindcss()],
