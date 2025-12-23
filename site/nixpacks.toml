@@ -1,6 +1,5 @@
 [phases.setup]
 nixPkgs = ['nodejs_18']
-nixpkgsArchive = 'ba913eda2df8eb72147259bfbd4dfedc'
 
 [phases.install]
 cmds = ['npm ci']
