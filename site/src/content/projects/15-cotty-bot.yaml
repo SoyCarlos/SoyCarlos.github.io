@@ -1,0 +1,9 @@
+name: cotty-bot
+org: OpenPatterson
+description: "LLM-powered civic chatbot using Pinecone vector search and LangChain for retrieval-augmented generation over city documents."
+tags:
+  - CivicTech
+  - AI
+language: Python
+github: https://github.com/OpenPatterson/cotty-bot
+website: null

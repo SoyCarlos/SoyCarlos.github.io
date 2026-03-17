@@ -1,0 +1,9 @@
+name: CensusSummer2019
+org: SoyCarlos
+description: "Work from my Data Science Civic Digital Fellowship at the U.S. Census Bureau, Summer 2019, under the supervision of Keith Finlay and Elizabeth Willhide."
+tags:
+  - CivicTech
+  - Data Science
+language: Python
+github: https://github.com/SoyCarlos/CensusSummer2019
+website: null

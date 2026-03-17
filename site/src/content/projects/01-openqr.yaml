@@ -1,0 +1,10 @@
+name: openqr
+org: SoyCarlos
+description: "A free, privacy-first QR code generator with full visual customization. Generate, style, and download QR codes as high-resolution PNG or SVG — no account, no tracking."
+tags:
+  - Open Source
+  - Web App
+  - Vibe Coded
+language: TypeScript
+github: https://github.com/SoyCarlos/openqr
+website: null

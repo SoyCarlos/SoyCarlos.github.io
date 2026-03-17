@@ -142,6 +142,20 @@ const skillsCollectionES = defineCollection({
     }),
 });
 
+const projectsCollection = defineCollection({
+    type: 'data',
+    schema: z.object({
+        draft: z.boolean().optional(),
+        name: z.string(),
+        org: z.string(),
+        description: z.string(),
+        tags: z.array(z.string()),
+        language: z.string().nullable().optional(),
+        github: z.string().url(),
+        website: z.string().url().nullable().optional(),
+    }),
+});
+
 export const collections = {
     blog: blogCollection,
     'blog-es': blogCollectionES,
@@ -155,4 +169,5 @@ export const collections = {
     'volunteer-es': volunteerCollectionES,
     skills: skillsCollection,
     'skills-es': skillsCollectionES,
+    projects: projectsCollection,
 };

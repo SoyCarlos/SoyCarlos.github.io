@@ -1,0 +1,9 @@
+name: iMessage-Analysis
+org: SoyCarlos
+description: "Exploratory data analysis of my personal iMessage conversations, examining communication patterns and trends."
+tags:
+  - Data Science
+  - Research
+language: Jupyter Notebook
+github: https://github.com/SoyCarlos/iMessage-Analysis
+website: https://carlos.soy/2019/07/30/show-me-your-phone

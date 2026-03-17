@@ -1,0 +1,9 @@
+name: civvy-bot
+org: OpenPatterson
+description: "An AI-powered civic chatbot for OpenPatterson, built to help residents navigate local government information."
+tags:
+  - CivicTech
+  - AI
+language: Python
+github: https://github.com/OpenPatterson/civvy-bot
+website: null

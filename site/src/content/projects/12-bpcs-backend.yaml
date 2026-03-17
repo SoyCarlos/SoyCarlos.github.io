@@ -1,0 +1,9 @@
+name: bpcs-backend
+org: OpenPatterson
+description: "Go programs deployed to AWS Lambda that scrape Patterson City Council meeting data, extract agendas to markdown, and sync content to the BPCS frontend."
+tags:
+  - CivicTech
+  - Backend
+language: Go
+github: https://github.com/OpenPatterson/bpcs-backend
+website: null

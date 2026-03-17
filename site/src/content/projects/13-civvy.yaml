@@ -1,0 +1,8 @@
+name: civvy
+org: OpenPatterson
+description: "A civic technology application for community engagement in Patterson, CA."
+tags:
+  - CivicTech
+language: null
+github: https://github.com/OpenPatterson/civvy
+website: null

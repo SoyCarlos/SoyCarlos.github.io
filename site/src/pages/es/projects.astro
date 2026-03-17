@@ -1,9 +1,16 @@
 ---
+import { getCollection } from 'astro:content';
 import Layout from '@layouts/es/Primary.astro';
 import ProjectsGrid from '@components/ProjectsGrid.jsx';
+
+const projectEntries = await getCollection('projects');
+const projects = projectEntries
+  .filter((entry) => !entry.data.draft)
+  .sort((a, b) => a.id.localeCompare(b.id))
+  .map((entry) => entry.data);
 ---
 <Layout title="Proyectos — Carlos E. Ortega">
 	<main>
-		<ProjectsGrid client:load />
+		<ProjectsGrid client:load projects={projects} />
 	</main>
 </Layout>

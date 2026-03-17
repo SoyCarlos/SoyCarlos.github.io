@@ -1,0 +1,9 @@
+name: openpatterson.org
+org: OpenPatterson
+description: "The OpenPatterson civic technology organization website, serving the city of Patterson, CA."
+tags:
+  - CivicTech
+  - Web App
+language: TypeScript
+github: https://github.com/OpenPatterson/openpatterson.org
+website: https://openpatterson.org

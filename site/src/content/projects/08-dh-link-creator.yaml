@@ -1,0 +1,9 @@
+name: dh-link-creator
+org: SoyCarlos
+description: "UC Berkeley DataHub Link Creator — generates shareable links that let students duplicate GitHub repositories directly into their DataHub workspace."
+tags:
+  - Open Source
+  - Education
+language: HTML
+github: https://github.com/SoyCarlos/dh-link-creator
+website: https://soycarlos.github.io/dh-link-creator/

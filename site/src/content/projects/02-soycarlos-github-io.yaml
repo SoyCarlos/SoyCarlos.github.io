@@ -1,0 +1,9 @@
+name: SoyCarlos.github.io
+org: SoyCarlos
+description: "My personal portfolio and blog — the site you're on right now. Built with Astro and Tailwind CSS with bilingual (EN/ES) support."
+tags:
+  - Personal
+  - Web App
+language: Astro
+github: https://github.com/SoyCarlos/SoyCarlos.github.io
+website: https://carlos.soy

@@ -1,0 +1,9 @@
+name: bpcs
+org: OpenPatterson
+description: "Better Patterson Council Site — scrapes City Council meeting dates, agendas, and links to provide a more accessible civic experience for Patterson residents."
+tags:
+  - CivicTech
+  - Web App
+language: TypeScript
+github: https://github.com/OpenPatterson/bpcs
+website: https://council.openpatterson.org/

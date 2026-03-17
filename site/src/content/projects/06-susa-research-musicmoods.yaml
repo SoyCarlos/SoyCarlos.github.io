@@ -1,0 +1,9 @@
+name: SUSA-Research-MusicMoods
+org: SoyCarlos
+description: "NLP analysis of Billboard's Top 100 songs, exploring whether melancholic music has dominated radio over time. Research conducted at UC Berkeley's SAAS."
+tags:
+  - Research
+  - Data Science
+language: Jupyter Notebook
+github: https://github.com/SoyCarlos/SUSA-Research-MusicMoods
+website: https://carlos.soy/2018/12/08/have-sadbois-taken-over-the-radio

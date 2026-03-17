@@ -1,0 +1,10 @@
+name: EnQueTrabajas
+org: SoyCarlos
+description: "A T3 Stack web app built with Next.js, Prisma, Tailwind CSS, and tRPC."
+tags:
+  - Personal
+  - Web App
+  - Vibe Coded
+language: TypeScript
+github: https://github.com/SoyCarlos/EnQueTrabajas
+website: https://en-que-trabajas.vercel.app

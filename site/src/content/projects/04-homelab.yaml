@@ -1,0 +1,9 @@
+name: homelab
+org: SoyCarlos
+description: "A curated catalog of self-hosted services and homelab tooling. Covers analytics, media servers, smart home automation, VPN, monitoring, and more."
+tags:
+  - Personal
+  - Homelab
+language: Shell
+github: https://github.com/SoyCarlos/homelab
+website: null

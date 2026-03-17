@@ -1,0 +1,9 @@
+name: ezPDF
+org: OpenPatterson
+description: "A lightweight Python utility for PDF manipulation, developed for civic use cases."
+tags:
+  - CivicTech
+  - Open Source
+language: Python
+github: https://github.com/OpenPatterson/ezPDF
+website: null
