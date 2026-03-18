@@ -1,20 +1,20 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Button } from '@components/ui/button'
 
 const navigation = [
-  { name: "Resume", href: "/resume" },
-  { name: "Blog", href: "/blog" },
-  { name: "Notes & Ramblings", href: "/notes" },
-  { name: "Projects", href: "/projects" },
+  { name: "CV", href: "/es/resume" },
+  { name: "Blog", href: "/es/blog" },
+  { name: "Notas", href: "/es/notes" },
+  { name: "Proyectos", href: "/es/projects" },
 ];
 
-export default function Header({ currentPath = "/" }) {
+export default function Header({ currentPath = "/es" }: { currentPath?: string }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  
-  // Convert current path to Spanish version
-  console.log("currentPath", currentPath);
-  const spanishPath = currentPath === "/" ? "/es" : `/es${currentPath}`;
+
+  // Convert current path to English version
+  const englishPath = currentPath === "/es" ? "/" : currentPath.replace("/es", "");
 
   return (
     <header className="border-b-2 border-yellow-500">
@@ -22,9 +22,9 @@ export default function Header({ currentPath = "/" }) {
         {/* Flex Container */}
         <div className="flex items-center justify-between w-full">
           {/* Logo */}
-          <div className="text-left text-2xl">
-            <a href="/">Carlos Ortega</a>
-          </div>
+          <Button size="lg" className="text-2xl" render={<a href="/es" />}>
+            Carlos Ortega
+          </Button>
           <div className="flex md:hidden">
             <button
               type="button"
@@ -35,36 +35,27 @@ export default function Header({ currentPath = "/" }) {
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center gap-4">
             {/* Menu Items */}
-            {navigation.map((item, index) => (
-              <a
-                key={index}
-                href={item.href}
-                className="p-3 px-6 py-3 hover:bg-primary hover:underline"
-              >
+            {navigation.map((item) => (
+              <Button key={item.name} render={<a href={item.href} />}>
                 {item.name}
-              </a>
+              </Button>
             ))}
-            {/* Language Button */}
-            <a
-              href={spanishPath}
-              className="flex items-center space-x-1 px-3 py-2 rounded-md hover:bg-gray-100 transition-colors"
-              title="Español"
-            >
-              <span className="text-xl">🇲🇽</span>
-              <span className="text-sm font-medium">ES</span>
-            </a>
+            {/* Language Toggle */}
+            <Button render={<a href={englishPath} title="English" />}>
+              <span className="text-base">🇺🇸</span> EN
+            </Button>
           </div>
         </div>
-      </nav>    
+      </nav>
       <Dialog as="div" className="md:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="">Carlos E. Ortega</span>
-            </a>
+            <Button size="lg" className="text-xl" render={<a href="/es" />}>
+              Carlos E. Ortega
+            </Button>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -76,24 +67,16 @@ export default function Header({ currentPath = "/" }) {
           </div>
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
+              <div className="space-y-3 py-6">
                 {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
+                  <Button key={item.name} className="w-full justify-start" render={<a href={item.href} />}>
                     {item.name}
-                  </a>
+                  </Button>
                 ))}
-                {/* Language Button for Mobile */}
-                <a
-                  href={spanishPath}
-                  className="-mx-3 flex items-center space-x-2 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  <span className="text-xl">🇲🇽</span>
-                  <span>Español</span>
-                </a>
+                {/* Language Toggle for Mobile */}
+                <Button className="w-full justify-start" render={<a href={englishPath} />}>
+                  <span className="text-base">🇺🇸</span> English
+                </Button>
               </div>
             </div>
           </div>

@@ -1,19 +1,19 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Button } from '@components/ui/button'
 
 const navigation = [
-  { name: "CV", href: "/es/resume" },
-  { name: "Blog", href: "/es/blog" },
-  { name: "Notas y Divagaciones", href: "/es/notes" },
-  { name: "Proyectos", href: "/es/projects" },
+  { name: "Resume", href: "/resume" },
+  { name: "Blog", href: "/blog" },
+  { name: "Notes", href: "/notes" },
+  { name: "Projects", href: "/projects" },
 ];
 
-export default function Header({ currentPath = "/es" }) {
+export default function Header({ currentPath = "/" }: { currentPath?: string }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  
-  // Convert current path to English version
-  const englishPath = currentPath === "/es" ? "/" : currentPath.replace("/es", "");
+
+  const spanishPath = currentPath === "/" ? "/es" : `/es${currentPath}`;
 
   return (
     <header className="border-b-2 border-yellow-500">
@@ -21,9 +21,9 @@ export default function Header({ currentPath = "/es" }) {
         {/* Flex Container */}
         <div className="flex items-center justify-between w-full">
           {/* Logo */}
-          <div className="text-left text-2xl">
-            <a href="/es">Carlos Ortega</a>
-          </div>
+          <Button size="lg" className="text-2xl" render={<a href="/" />}>
+            Carlos Ortega
+          </Button>
           <div className="flex md:hidden">
             <button
               type="button"
@@ -34,36 +34,27 @@ export default function Header({ currentPath = "/es" }) {
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center gap-4">
             {/* Menu Items */}
-            {navigation.map((item, index) => (
-              <a
-                key={index}
-                href={item.href}
-                className="p-3 px-6 py-3 hover:bg-primary hover:underline"
-              >
+            {navigation.map((item) => (
+              <Button key={item.name} render={<a href={item.href} />}>
                 {item.name}
-              </a>
+              </Button>
             ))}
-            {/* Language Button */}
-            <a
-              href={englishPath}
-              className="flex items-center space-x-1 px-3 py-2 rounded-md hover:bg-gray-100 transition-colors"
-              title="English"
-            >
-              <span className="text-xl">🇺🇸</span>
-              <span className="text-sm font-medium">EN</span>
-            </a>
+            {/* Language Toggle */}
+            <Button render={<a href={spanishPath} title="Español" />}>
+              <span className="text-base">🇲🇽</span> ES
+            </Button>
           </div>
         </div>
-      </nav>    
+      </nav>
       <Dialog as="div" className="md:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="">Carlos E. Ortega</span>
-            </a>
+            <Button size="lg" className="text-xl" render={<a href="/" />}>
+              Carlos E. Ortega
+            </Button>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -75,24 +66,16 @@ export default function Header({ currentPath = "/es" }) {
           </div>
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
+              <div className="space-y-3 py-6">
                 {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >
+                  <Button key={item.name} className="w-full justify-start" render={<a href={item.href} />}>
                     {item.name}
-                  </a>
+                  </Button>
                 ))}
-                {/* Language Button for Mobile */}
-                <a
-                  href={englishPath}
-                  className="-mx-3 flex items-center space-x-2 rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  <span className="text-xl">🇺🇸</span>
-                  <span>English</span>
-                </a>
+                {/* Language Toggle for Mobile */}
+                <Button className="w-full justify-start" render={<a href={spanishPath} />}>
+                  <span className="text-base">🇲🇽</span> Español
+                </Button>
               </div>
             </div>
           </div>

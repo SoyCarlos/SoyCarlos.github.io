@@ -1,0 +1,121 @@
+---
+import Layout from '@layouts/Primary.astro';
+import Hero from '@components/Hero.astro';
+import LatestList from '@components/LatestList.astro';
+import LatestNotes from '@components/LatestNotes.astro';
+import EducationResume from '@components/EducationResume.astro';
+import SkillsResume from '@components/SkillsResume.astro';
+import ResumeHero from '@components/ResumeHero.astro';
+import ResumeEntry from '@components/ResumeEntry.jsx';
+import ProjectsGrid from '@components/ProjectsGrid.jsx';
+import { Button } from '@components/ui/button';
+import { getCollection } from 'astro:content';
+
+const projects = await getCollection('projects', ({ data }) => !data.draft);
+const education = await getCollection('education');
+const skills = await getCollection('skills');
+const jobFiles = await Astro.glob('@content/experience/*.md');
+const jobs = await Promise.all(
+  jobFiles.map(async (file) => {
+    const content = await file.compiledContent();
+    return { ...file, content };
+  })
+);
+---
+
+<Layout title="Playground">
+  <div class="max-w-4xl mx-auto px-4 py-8 space-y-16">
+    <h1 class="text-4xl font-bold border-b-2 border-yellow-500 pb-2">Component Playground</h1>
+
+    <!-- Button -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4 text-yellow-500">Button</h2>
+      <div class="border border-gray-700 rounded-lg p-4 flex flex-wrap gap-4 items-center">
+        <Button client:load>Default</Button>
+        <Button client:load variant="outline">Outline</Button>
+        <Button client:load variant="secondary">Secondary</Button>
+        <Button client:load variant="ghost">Ghost</Button>
+        <Button client:load variant="destructive">Destructive</Button>
+        <Button client:load variant="link">Link</Button>
+        <Button client:load size="sm">Small</Button>
+        <Button client:load size="lg">Large</Button>
+        <Button client:load disabled>Disabled</Button>
+      </div>
+    </section>
+
+    <!-- Hero -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4 text-yellow-500">Hero</h2>
+      <div class="border border-gray-700 rounded-lg p-4">
+        <Hero>
+          <p>This is placeholder content inside the Hero component.</p>
+        </Hero>
+      </div>
+    </section>
+
+    <!-- LatestList -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4 text-yellow-500">LatestList</h2>
+      <div class="border border-gray-700 rounded-lg p-4">
+        <LatestList />
+      </div>
+    </section>
+
+    <!-- LatestNotes -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4 text-yellow-500">LatestNotes</h2>
+      <div class="border border-gray-700 rounded-lg p-4">
+        <LatestNotes />
+      </div>
+    </section>
+
+    <!-- ProjectsGrid -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4 text-yellow-500">ProjectsGrid</h2>
+      <div class="border border-gray-700 rounded-lg p-4">
+        <ProjectsGrid client:load projects={projects.map(p => p.data)} />
+      </div>
+    </section>
+
+    <!-- ResumeHero -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4 text-yellow-500">ResumeHero</h2>
+      <div class="border border-gray-700 rounded-lg p-4">
+        <ResumeHero />
+      </div>
+    </section>
+
+    <!-- ResumeEntry -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4 text-yellow-500">ResumeEntry</h2>
+      <div class="border border-gray-700 rounded-lg p-4">
+        {jobs.slice(0, 1).map((job: any) => (
+          <ResumeEntry
+            org={job.frontmatter.org}
+            website={job.frontmatter.website}
+            position={job.frontmatter.position}
+            location={job.frontmatter.location}
+            duration={job.frontmatter.duration}
+            summary={job.content}
+          />
+        ))}
+      </div>
+    </section>
+
+    <!-- EducationResume -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4 text-yellow-500">EducationResume</h2>
+      <div class="border border-gray-700 rounded-lg p-4">
+        {education.map((school) => <EducationResume education={school} />)}
+      </div>
+    </section>
+
+    <!-- SkillsResume -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4 text-yellow-500">SkillsResume</h2>
+      <div class="border border-gray-700 rounded-lg p-4">
+        {skills.map((skill) => <SkillsResume skills={skill} />)}
+      </div>
+    </section>
+  </div>
+</Layout>
