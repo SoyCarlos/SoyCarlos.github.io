@@ -16,8 +16,8 @@ export default function Header({ currentPath = "/" }: { currentPath?: string }) 
   const spanishPath = currentPath === "/" ? "/es" : `/es${currentPath}`;
 
   return (
-    <header className="border-b-2 border-yellow-500">
-      <nav className="relative container lg:w-2/3 mx-auto py-3 px-6 xxl:w-2/4">
+    <header className="border-b-2 border-yellow-500 border-dashed">
+      <nav className="relative container lg:w-2/3 mx-auto py-5 px-6 xxl:w-2/4">
         {/* Flex Container */}
         <div className="flex items-center justify-between w-full">
           {/* Logo */}
