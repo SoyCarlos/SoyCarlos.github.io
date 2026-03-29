@@ -1,7 +1,7 @@
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { Button } from '@components/ui/button'
+import { useState } from "react";
+import { Dialog } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Button } from "@components/ui/button";
 
 const navigation = [
   { name: "CV", href: "/es/resume" },
@@ -10,15 +10,20 @@ const navigation = [
   { name: "Proyectos", href: "/es/projects" },
 ];
 
-export default function Header({ currentPath = "/es" }: { currentPath?: string }) {
+export default function Header({
+  currentPath = "/es",
+}: {
+  currentPath?: string;
+}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Convert current path to English version
-  const englishPath = currentPath === "/es" ? "/" : currentPath.replace("/es", "");
+  const englishPath =
+    currentPath === "/es" ? "/" : currentPath.replace("/es", "");
 
   return (
-    <header className="border-b-2 border-yellow-500">
-      <nav className="relative container lg:w-2/3 mx-auto py-3 px-6 xxl:w-2/4">
+    <header className="border-b-2 border-yellow-500 border-dashed">
+      <nav className="relative container lg:w-2/3 mx-auto py-5 px-6 xxl:w-2/4">
         {/* Flex Container */}
         <div className="flex items-center justify-between w-full">
           {/* Logo */}
@@ -49,7 +54,12 @@ export default function Header({ currentPath = "/es" }: { currentPath?: string }
           </div>
         </div>
       </nav>
-      <Dialog as="div" className="md:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+      <Dialog
+        as="div"
+        className="md:hidden"
+        open={mobileMenuOpen}
+        onClose={setMobileMenuOpen}
+      >
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
@@ -69,12 +79,19 @@ export default function Header({ currentPath = "/es" }: { currentPath?: string }
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-3 py-6">
                 {navigation.map((item) => (
-                  <Button key={item.name} className="w-full justify-start" render={<a href={item.href} />}>
+                  <Button
+                    key={item.name}
+                    className="w-full justify-start"
+                    render={<a href={item.href} />}
+                  >
                     {item.name}
                   </Button>
                 ))}
                 {/* Language Toggle for Mobile */}
-                <Button className="w-full justify-start" render={<a href={englishPath} />}>
+                <Button
+                  className="w-full justify-start"
+                  render={<a href={englishPath} />}
+                >
                   <span className="text-base">🇺🇸</span> English
                 </Button>
               </div>
