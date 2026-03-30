@@ -156,6 +156,18 @@ const projectsCollection = defineCollection({
     }),
 });
 
+const certificatesCollection = defineCollection({
+    type: 'data',
+    schema: z.object({
+        org: z.string(),
+        website: z.string().url().optional(),
+        items: z.array(z.object({
+            name: z.string(),
+            duration: z.string(),
+        })),
+    }),
+});
+
 export const collections = {
     blog: blogCollection,
     'blog-es': blogCollectionES,
@@ -170,4 +182,5 @@ export const collections = {
     skills: skillsCollection,
     'skills-es': skillsCollectionES,
     projects: projectsCollection,
+    certificates: certificatesCollection,
 };

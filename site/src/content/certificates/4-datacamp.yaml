@@ -1,0 +1,11 @@
+org: DataCamp
+website: https://www.datacamp.com/
+items:
+  - name: Data Engineering for Everyone
+    duration: Jul 2021 — Jul 2023
+  - name: Introduction to Airflow in Python
+    duration: Jul 2021 — Jul 2023
+  - name: Introduction to Data Engineering
+    duration: Jul 2021 — Jul 2023
+  - name: Streamlined Data Ingestion with pandas
+    duration: Jul 2021 — Jul 2023

@@ -1,0 +1,16 @@
+---
+const { cert } = Astro.props;
+---
+<div class="pb-3">
+    <div class="text-xl font-bold">
+        {cert.data.website
+            ? <a href={cert.data.website} target="_blank" rel="noopener noreferrer" class="hover:underline">{cert.data.org}</a>
+            : cert.data.org
+        }
+    </div>
+    {cert.data.items.map((item: { name: string; duration: string }) => (
+        <div class="text-sm">
+            {item.name} <span class="text-gray-500">&bull; {item.duration}</span>
+        </div>
+    ))}
+</div>

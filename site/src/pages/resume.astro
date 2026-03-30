@@ -4,6 +4,7 @@ import ResumeHero from "@components/ResumeHero.astro";
 import EducationResume from "@components/EducationResume.astro";
 import SkillsResume from "@components/SkillsResume.astro";
 import ResumeEntry from "@components/ResumeEntry.jsx";
+import CertificatesResume from "@components/CertificatesResume.astro";
 import { getCollection } from "astro:content";
 
 var education = await getCollection("education");
@@ -15,6 +16,7 @@ const jobs = await Promise.all(
   })
 )
 var skills = await getCollection("skills");
+var certificates = await getCollection("certificates");
 const volunteerFiles = await Astro.glob("@content/volunteer/*.md");
 const volunteers = await Promise.all(
   volunteerFiles.map(async (file) => {
@@ -56,6 +58,12 @@ const volunteers = await Promise.all(
       >
         <div class="text-2xl font-black">Skills</div>
         {skills.map((skill) => <SkillsResume skills={skill} />)}
+      </div>
+      <div
+        class="m-5 text-left flex-col w-4/5 pb-5 border-b-2 border-gray-400 lg:w-3/5 xxl:w-2/4"
+      >
+        <div class="text-2xl font-black">Certificates</div>
+        {certificates.map((cert) => <CertificatesResume cert={cert} />)}
       </div>
 	  <div
 	  class="m-5 text-left flex-col w-4/5 pb-5 border-b-2 border-gray-400 lg:w-3/5 xxl:w-2/4"
