@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import carlosAvatar from '../assets/carlos-notion.png';
 ---
 
 <div>
@@ -13,6 +15,6 @@
     <slot />
   </div>
   <div class="w-3/5 m-auto py-10 relative lg:py-0 lg:w-96 lg:m-5 xl:w-1/5">
-    <img src="/assets/carlos-notion.png" alt="Carlos' Notion Avatar" />
+    <Image src={carlosAvatar} alt="Notion Carlos Avatar" />
   </div>
 </div>
