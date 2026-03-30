@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Dialog } from "@headlessui/react";
+import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Button } from "@components/ui/button";
 
@@ -27,7 +27,7 @@ export default function Header({
         {/* Flex Container */}
         <div className="flex items-center justify-between w-full">
           {/* Logo */}
-          <Button size="lg" className="text-2xl" render={<a href="/es" />}>
+          <Button size="lg" className="text-2xl" nativeButton={false} render={<a href="/es" />}>
             Carlos Ortega
           </Button>
           <div className="flex md:hidden">
@@ -43,12 +43,12 @@ export default function Header({
           <div className="hidden md:flex items-center gap-4">
             {/* Menu Items */}
             {navigation.map((item) => (
-              <Button key={item.name} render={<a href={item.href} />}>
+              <Button key={item.name} nativeButton={false} render={<a href={item.href} />}>
                 {item.name}
               </Button>
             ))}
             {/* Language Toggle */}
-            <Button render={<a href={englishPath} title="English" />}>
+            <Button nativeButton={false} render={<a href={englishPath} title="English" />}>
               <span className="text-base">🇺🇸</span> EN
             </Button>
           </div>
@@ -61,9 +61,9 @@ export default function Header({
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <Button size="lg" className="text-xl" render={<a href="/es" />}>
+            <Button size="lg" className="text-xl" nativeButton={false} render={<a href="/es" />}>
               Carlos E. Ortega
             </Button>
             <button
@@ -82,6 +82,7 @@ export default function Header({
                   <Button
                     key={item.name}
                     className="w-full justify-start"
+                    nativeButton={false}
                     render={<a href={item.href} />}
                   >
                     {item.name}
@@ -90,6 +91,7 @@ export default function Header({
                 {/* Language Toggle for Mobile */}
                 <Button
                   className="w-full justify-start"
+                  nativeButton={false}
                   render={<a href={englishPath} />}
                 >
                   <span className="text-base">🇺🇸</span> English
@@ -97,7 +99,7 @@ export default function Header({
               </div>
             </div>
           </div>
-        </Dialog.Panel>
+        </DialogPanel>
       </Dialog>
     </header>
   );

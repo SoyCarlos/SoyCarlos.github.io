@@ -12,5 +12,5 @@ I consider myself a jack of all trades — I've worn hats across software engine
   <a href="https://caltv.berkeley.edu/" target="_blank" class="px-3 py-1 text-sm border border-border rounded-full hover:bg-muted transition-colors no-underline">CalTV</a>
 </div>
 
-Eager to connect? Reach me at <a href="mailto:me@carlos.soy" class="underline font-bold">me@carlos.soy</a>.
+Eager to connect? Reach me at **[me@carlos.soy](mailto:me@carlos.soy)**.
 <br />

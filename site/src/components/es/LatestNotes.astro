@@ -31,12 +31,12 @@ const allTags = Array.from(
         <div class="flex-col">
           <li>
             <a
-              href={`/es/notes/${note.slug}`}
+              href={`/es/notes/${note.id}`}
               class="font-bold text-2xl hover:underline md:text-4xl"
             >
               {note.data.title}
             </a>
-            <a href={`/es/notes/${note.slug}`} class="flex">
+            <a href={`/es/notes/${note.id}`} class="flex">
               {note.data.publishDate}
             </a>
           </li>

@@ -14,12 +14,12 @@ import { getCollection } from 'astro:content';
 const projects = await getCollection('projects', ({ data }) => !data.draft);
 const education = await getCollection('education');
 const skills = await getCollection('skills');
-const jobFiles = await Astro.glob('@content/experience/*.md');
+const jobModules = import.meta.glob('../content/experience/*.md', { eager: true }) as Record<string, any>;
 const jobs = await Promise.all(
-  jobFiles.map(async (file) => {
-    const content = await file.compiledContent();
-    return { ...file, content };
-  })
+  Object.values(jobModules).map(async (file: any) => ({
+    ...file,
+    content: await file.compiledContent(),
+  }))
 );
 ---
 

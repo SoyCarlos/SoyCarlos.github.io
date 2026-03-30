@@ -8,21 +8,21 @@ import CertificatesResume from "@components/CertificatesResume.astro";
 import { getCollection } from "astro:content";
 
 var education = await getCollection("education");
-const jobFiles = await Astro.glob("@content/experience/*.md");
+const jobModules = import.meta.glob('../content/experience/*.md', { eager: true }) as Record<string, any>;
 const jobs = await Promise.all(
-  jobFiles.map(async (file) => {
-    const content = await file.compiledContent();
-    return { ...file, content };
-  })
-)
+  Object.values(jobModules).map(async (file: any) => ({
+    ...file,
+    content: await file.compiledContent(),
+  }))
+);
 var skills = await getCollection("skills");
 var certificates = await getCollection("certificates");
-const volunteerFiles = await Astro.glob("@content/volunteer/*.md");
+const volunteerModules = import.meta.glob('../content/volunteer/*.md', { eager: true }) as Record<string, any>;
 const volunteers = await Promise.all(
-  volunteerFiles.map(async (file) => {
-    const content = await file.compiledContent();
-    return { ...file, content };
-  })
+  Object.values(volunteerModules).map(async (file: any) => ({
+    ...file,
+    content: await file.compiledContent(),
+  }))
 );
 ---
 

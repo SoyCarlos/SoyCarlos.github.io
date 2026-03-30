@@ -1,7 +1,9 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { glob } from 'astro/loaders';
+import { z } from 'astro/zod';
 
 const blogCollection = defineCollection({
-    type:'content',
+    loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
     schema: z.object({
         draft: z.boolean().optional(),
         title: z.string(),
@@ -13,12 +15,12 @@ const blogCollection = defineCollection({
         hero_image_owner: z.string().optional(),
         hero_image_owner_url: z.string().optional(),
         hero_image_location: z.string().optional(),
-        hero_image_location_url: z.string().url().optional(),
+        hero_image_location_url: z.url().optional(),
     })
-}); 
+});
 
 const blogCollectionES = defineCollection({
-    type:'content',
+    loader: glob({ pattern: '**/*.md', base: './src/content/blog-es' }),
     schema: z.object({
         draft: z.boolean().optional(),
         title: z.string(),
@@ -30,41 +32,41 @@ const blogCollectionES = defineCollection({
         hero_image_owner: z.string().optional(),
         hero_image_owner_url: z.string().optional(),
         hero_image_location: z.string().optional(),
-        hero_image_location_url: z.string().url().optional(),
+        hero_image_location_url: z.url().optional(),
     })
-}); 
+});
 
 const notesCollection = defineCollection({
-    type:'content',
+    loader: glob({ pattern: '**/*.md', base: './src/content/notes' }),
     schema: z.object({
         draft: z.boolean().optional(),
         title: z.string(),
         publishDate: z.string(),
         updatedDate: z.string(),
         videoID: z.string().optional(),
-        videoLink: z.string().url().optional(),
+        videoLink: z.url().optional(),
         tags: z.array(z.string()),
     })
-}); 
+});
 
 const notesCollectionES = defineCollection({
-    type:'content',
+    loader: glob({ pattern: '**/*.md', base: './src/content/notes-es' }),
     schema: z.object({
         draft: z.boolean().optional(),
         title: z.string(),
         publishDate: z.string(),
         updatedDate: z.string(),
         videoID: z.string().optional(),
-        videoLink: z.string().url().optional(),
+        videoLink: z.url().optional(),
         tags: z.array(z.string()),
     })
-}); 
+});
 
 const experienceCollection = defineCollection({
-    type:'content',
+    loader: glob({ pattern: '**/*.md', base: './src/content/experience' }),
     schema: z.object({
         org: z.string(),
-        website: z.string().url(),
+        website: z.url(),
         position: z.string(),
         location: z.string(),
         duration: z.string(),
@@ -72,10 +74,10 @@ const experienceCollection = defineCollection({
 });
 
 const experienceCollectionES = defineCollection({
-    type:'content',
+    loader: glob({ pattern: '**/*.md', base: './src/content/experience-es' }),
     schema: z.object({
         org: z.string(),
-        website: z.string().url(),
+        website: z.url(),
         position: z.string(),
         location: z.string(),
         duration: z.string(),
@@ -83,10 +85,10 @@ const experienceCollectionES = defineCollection({
 });
 
 const educationCollection = defineCollection({
-    type:'data',
+    loader: glob({ pattern: '**/*.yaml', base: './src/content/education' }),
     schema: z.object({
         school: z.string(),
-        website: z.string().url(),
+        website: z.url(),
         degree: z.string(),
         graduation_date: z.string(),
         course_work: z.array(z.string()),
@@ -94,10 +96,10 @@ const educationCollection = defineCollection({
 });
 
 const educationCollectionES = defineCollection({
-    type:'data',
+    loader: glob({ pattern: '**/*.yaml', base: './src/content/education-es' }),
     schema: z.object({
         school: z.string(),
-        website: z.string().url(),
+        website: z.url(),
         degree: z.string(),
         graduation_date: z.string(),
         course_work: z.array(z.string()),
@@ -105,10 +107,10 @@ const educationCollectionES = defineCollection({
 });
 
 const volunteerCollection = defineCollection({
-    type:'content',
+    loader: glob({ pattern: '**/*.md', base: './src/content/volunteer' }),
     schema: z.object({
         org: z.string(),
-        website: z.string().url(),
+        website: z.url(),
         position: z.string(),
         location: z.string(),
         duration: z.string(),
@@ -116,10 +118,10 @@ const volunteerCollection = defineCollection({
 });
 
 const volunteerCollectionES = defineCollection({
-    type:'content',
+    loader: glob({ pattern: '**/*.md', base: './src/content/volunteer-es' }),
     schema: z.object({
         org: z.string(),
-        website: z.string().url(),
+        website: z.url(),
         position: z.string(),
         location: z.string(),
         duration: z.string(),
@@ -127,7 +129,7 @@ const volunteerCollectionES = defineCollection({
 });
 
 const skillsCollection = defineCollection({
-    type:'data',
+    loader: glob({ pattern: '**/*.yaml', base: './src/content/skills' }),
     schema: z.object({
         category: z.string(),
         skills_list: z.string(),
@@ -135,7 +137,7 @@ const skillsCollection = defineCollection({
 });
 
 const skillsCollectionES = defineCollection({
-    type:'data',
+    loader: glob({ pattern: '**/*.yaml', base: './src/content/skills-es' }),
     schema: z.object({
         category: z.string(),
         skills_list: z.string(),
@@ -143,7 +145,7 @@ const skillsCollectionES = defineCollection({
 });
 
 const projectsCollection = defineCollection({
-    type: 'data',
+    loader: glob({ pattern: '**/*.yaml', base: './src/content/projects' }),
     schema: z.object({
         draft: z.boolean().optional(),
         name: z.string(),
@@ -151,16 +153,16 @@ const projectsCollection = defineCollection({
         description: z.string(),
         tags: z.array(z.string()),
         language: z.string().nullable().optional(),
-        github: z.string().url(),
-        website: z.string().url().nullable().optional(),
+        github: z.url(),
+        website: z.url().nullable().optional(),
     }),
 });
 
 const certificatesCollection = defineCollection({
-    type: 'data',
+    loader: glob({ pattern: '**/*.yaml', base: './src/content/certificates' }),
     schema: z.object({
         org: z.string(),
-        website: z.string().url().optional(),
+        website: z.url().optional(),
         items: z.array(z.object({
             name: z.string(),
             duration: z.string(),

@@ -1,10 +1,16 @@
 ---
 import { Image } from 'astro:assets';
 import carlosAvatar from '../assets/carlos-notion.png';
+
+interface Props {
+  greeting?: string;
+}
+
+const { greeting = "Hi I'm" } = Astro.props;
 ---
 
 <div>
-  <div class="text-2xl text-center pt-10">Hi I'm</div>
+  <div class="text-2xl text-center pt-10">{greeting}</div>
   <div class="text-2xl pb-5 text-center md:text-4xl">
     Carlos E. Ortega
   </div>
@@ -15,6 +21,6 @@ import carlosAvatar from '../assets/carlos-notion.png';
     <slot />
   </div>
   <div class="w-3/5 m-auto py-10 relative lg:py-0 lg:w-96 lg:m-5 xl:w-1/5">
-    <Image src={carlosAvatar} alt="Notion Carlos Avatar" />
+    <Image src={carlosAvatar} alt="Notion Carlos Avatar" loading="eager" />
   </div>
 </div>

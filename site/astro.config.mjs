@@ -13,7 +13,6 @@ export default defineConfig({
   adapter: node({
     mode: "standalone"
   }),
-  renderers: ["@astrojs/renderer-react"],
   site: 'https://www.carlos.soy/',
   server: {
     host: '0.0.0.0'

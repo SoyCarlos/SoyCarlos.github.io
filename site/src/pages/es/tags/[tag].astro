@@ -27,7 +27,7 @@ const notesWithTag = (await getCollection('notes-es')).filter(note =>
         <ul>
           <div class="flex-col">
             <li>
-              <a href={`/es/notes/${note.slug}`} class="font-bold text-2xl hover:underline md:text-4xl">{note.data.title}</a>
+              <a href={`/es/notes/${note.id}`} class="font-bold text-2xl hover:underline md:text-4xl">{note.data.title}</a>
               <p class="flex">{note.data.publishDate}</p>
             </li>
           </div>

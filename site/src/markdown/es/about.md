@@ -12,5 +12,5 @@ Me considero un todólogo — he desempeñado roles en ingeniería de software, 
   <a href="https://caltv.berkeley.edu/" target="_blank" class="px-3 py-1 text-sm border border-border rounded-full hover:bg-muted transition-colors no-underline">CalTV</a>
 </div>
 
-¿Te interesa conectar? Escríbeme a <a href="mailto:me@carlos.soy" class="underline font-bold">me@carlos.soy</a>.
+¿Te interesa conectar? Escríbeme a **[me@carlos.soy](mailto:me@carlos.soy)**.
 <br />
