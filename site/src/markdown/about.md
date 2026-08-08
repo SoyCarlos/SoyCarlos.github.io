@@ -1,4 +1,4 @@
-Hi! I'm Carlos Ortega, a Software Engineer and Data Analyst from ***[California's Central Valley](https://en.wikipedia.org/wiki/Central_Valley_(California))***. By day, I am working on freelance projects and ***[Pllrs](https://pllrs.co/).*** By night, I work on ***[Open Patterson](https://www.openpatterson.org/)***, a volunteer civic tech initiative working on independent projects for the community and partnering with local nonprofits.
+Hi! I'm Carlos Ortega, a Software Engineer and Data Analyst from ***[California's Central Valley](https://en.wikipedia.org/wiki/Central_Valley_(California))***. By day, I work for Stanislaus County as a Software Administrator (imagine Software Dev with general technologist duties sprinkled in).** By night, I work on ***[Central Valley Civic Tech](https://cvct.us/)***, a volunteer civic tech initiative working on independent projects for the community and partnering with local nonprofits.
 <br />
 I consider myself a jack of all trades — I've worn hats across software engineering, data science, and media production through roles at:
 
